@@ -1,0 +1,43 @@
+<div class="row my-4">
+    <div class="col-12 mb-4">
+        <h3 class="card-title" style="font-weight: 600;">
+           Add your payment details
+        </h3>
+        <div class="card border-0 shadow-sm" style="background-color: #e4ecf3;">
+            <div class="card-body font-weight-normal">
+                <div class="d-flex">
+                    <div class="col-6">
+                        <div>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Card Number</mat-label>
+                                <textarea matInput placeholder=" "></textarea>
+                            </mat-form-field> 
+                        </div>
+                        <div class="example-full-width">
+                            <mat-form-field>
+                                <mat-label>Expired Date</mat-label>
+                                <textarea matInput placeholder="MM/YYYY"></textarea>
+                            </mat-form-field> 
+                        
+                            <mat-form-field class="m-l">
+                                <mat-label>Security Code</mat-label>
+                                <textarea matInput placeholder="CVV 3 or 4 digits "></textarea>
+                            </mat-form-field> 
+                        </div>
+                        <div>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Name</mat-label>
+                                <textarea matInput placeholder="(as it appears on your card)"></textarea>
+                            </mat-form-field> 
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 align-self-center text-right">
+                        <button class="btn btn-primary text-uppercase" [routerLink]="'/user/course-concepts/288/13/test'">submit</button>
+                        <button class="btn btn-outline-primary text-uppercase ml-3">cancle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>

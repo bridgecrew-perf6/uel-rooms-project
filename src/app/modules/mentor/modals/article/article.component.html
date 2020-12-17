@@ -1,0 +1,43 @@
+
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+           <h3>Article / Tech Paper Submission</h3>
+
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <div class="col-lg-12 mt-2">
+            <mat-form-field style="width: 450px;" appearance="fill">
+                <mat-label style="font-weight: bold; font-family: Nunito; " class="article_title">Name of Article / Tech Paper</mat-label>
+                <mat-select>
+                    <mat-option>None</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-12 mt-2">
+            <mat-form-field style="width: 450px;" appearance="fill">
+                <mat-label>Category</mat-label>
+                <mat-select>
+                    <mat-option>None</mat-option>
+                    
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-12 mt-2">
+            <mat-form-field style="width: 450px;" appearance="fill">
+                <mat-label>Attach Your word doc here</mat-label>
+                <mat-select>
+                    <mat-option>None</mat-option>
+                 
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+   
+  </ng-template>
+<div class="col-lg-12 text-center mt-3">
+<a routerLink='article'><button class="btn btn-white p-0" (click)="openLg(content)"><h3 class="TRY-AGAIN">SUGGEST ARTICLE / TECH PAPER</h3></button></a>
+</div>

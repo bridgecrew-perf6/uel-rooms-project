@@ -1,0 +1,244 @@
+.card {
+    border-radius: 10px;
+    ::ng-deep .customTabset {
+        ul.nav-tabs {
+            padding-right: 16px;
+            padding-left: 16px;
+            justify-content: space-between;
+            .nav-item {
+                a {
+                    color: #1f2343;
+                }
+            }
+            .nav-item.active {
+                border-bottom: 2px solid #3a5edd;
+                a {
+                    color: #3a5edd;
+                    font-weight: 600;
+                }
+            }
+            .nav-item.active > a, .nav-link:hover, .nav-link:focus {
+                background-color: transparent;
+                border-color: transparent;
+            }
+        }
+        .tab-content {
+            background-color: transparent;
+            .mat-form-field-suffix {
+                top: 8px;
+            }
+        }
+    }
+      /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+     
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e4e3e3; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e4e3e3; 
+  }
+}
+
+.chatDetailWindow {
+    .card {
+        .card-header {
+            padding: 6px 20px;
+            img {
+                width: 30px;
+                height: auto;
+            }
+            .fa {
+                background-color: #dee2e6;
+                color: #3a5edd;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+            }
+            img.searchPng {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+            .chatTitle {
+                line-height: 15px;
+            }
+            p {
+                font-weight: 700;
+            }
+            small {
+                color: #db7093;
+            }
+        }
+        .card-body.commentsBody {
+            min-height: 490px;
+            max-height: 490px;
+            .commentsSets {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    object-fit: contain;
+                }
+                h6 {
+                    font-weight: 600;
+                }
+                p {
+                    small {
+                        color: #383e69;
+                    }
+                }
+                a {
+                    color: #3a5edd;
+                    font-weight: 600;
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+                .showLess {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    /* autoprefixer: ignore next */
+                    -webkit-box-orient: vertical;
+                }
+                .commentQuestion {
+                    font-weight: 600;
+                }
+            }
+        }
+        .card-footer {
+            img {
+                width: 30px;
+                height: auto;
+            }
+            img.avatar {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .card.memberDetails {
+            .card-header {
+                p {
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            }
+            .card-body {
+                min-height: 535px;
+                max-height: 535px;
+                .searchResults {
+                    .list-group-item {
+                        border: 0;
+                        border-bottom: 1px solid #e4e3e3;
+                        p {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            ::-webkit-scrollbar {
+                display: block;
+            }
+    }
+}
+
+::ng-deep .customMatMenu {
+    border-radius: 10px !important;
+    margin-top: 5px;
+    .mat-menu-content:not(:empty) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .mat-menu-item {
+            height: 40px;
+        }
+    }
+}
+
+::ng-deep .customMatSelector {
+    .mat-form-field-wrapper {
+        padding-bottom: 0px;
+    }
+    .mat-select-arrow {
+        border-left: none;
+    border-right: none;
+    }
+    .mat-select-value-text {
+        font-weight: 500;
+    }
+    .mat-form-field-underline {
+        display: none;
+    }
+}
+
+::ng-deep .customTabset {
+    .tab-content {
+        .matSelectpanel {
+            margin-top: 30px !important;
+        }
+        .topicList {
+            min-height: 450px;
+            max-height: 450px;
+            .customMatExpansionPanel {
+                border-radius: 10px !important;
+                margin: 10px !important;
+                .mat-expansion-panel-header {
+                    height: 45px !important;
+                    .mat-expansion-panel-header-title {
+                        font-weight: 500;
+                    }
+                }
+                .mat-expansion-panel-body {
+                    padding: 0;
+                    ul {
+                        li {
+                            font-weight: 500;
+                            list-style: none;
+                            padding: 6px 15px;
+                            margin: 2px 0px;
+                            border-left: 5px solid transparent;
+                            &:before {
+                                content: "•";
+                                margin-right: 10px;
+                                font-size: 30px;
+                                position: relative;
+                                top: 6px;
+                            }
+                            &:hover {
+                                background-color: #f0f5f9;
+                                cursor: pointer;
+                            }
+                            &.active {
+                                border-left: 5px solid #3a5edd;
+                                color: #3a5edd;
+                                &:hover {
+                                    background-color: transparent;
+                                    cursor: context-menu;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,51 @@
+::ng-deep .customTabset {
+    ul.nav-tabs {
+        padding-right: 16px;
+        padding-left: 16px;
+        .nav-item {
+            a {
+                color: #1f2343;
+            }
+            &:nth-child(2) {
+                margin-left: 15px;
+            }
+        }
+        .nav-item.active {
+            border-bottom: 2px solid #3a5edd;
+            a {
+                color: #3a5edd;
+                font-weight: 600;
+            }
+        }
+        .nav-item.active > a, .nav-link:hover, .nav-link:focus {
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+    .tab-content {
+        background-color: transparent;
+        padding: 16px;
+        .mat-form-field-suffix {
+            top: 8px;
+        }
+    }
+}
+
+.card {
+    border-radius: 10px;
+    ul.list-group {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+::ng-deep progressbar {
+    height: 10px !important;
+    border-radius: 10px !important;
+    background-color: #e4ecf3 !important;
+    .progress-bar {
+        background-color: #10c9b9;
+        border-radius: 10px;
+    }
+}

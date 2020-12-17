@@ -1,0 +1,20 @@
+@import url( "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
+.main{
+
+    font-family: nunito;
+}
+
+::ng-deep.mat-tab-label-active{
+    color:#3a5edd;
+}
+::ng-deep.mat-ink-bar {
+    background-color: #3a5edd !important;
+}
+::ng-deep.mat-tab-label{
+    min-width: 117px !important;
+}
+
+.btn{
+    background-color:  #30abd6;
+    }

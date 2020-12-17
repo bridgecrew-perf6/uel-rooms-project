@@ -1,0 +1,138 @@
+// ::ng-deep .tab-container {
+//     ul.nav-tabs {
+//         background-color: #17a2b8 !important;
+//         border-top-right-radius: 0.25rem;
+//         border-top-left-radius: 0.25rem;
+//         padding-left: 1rem;
+//         padding-right: 1rem;
+//     li {
+//         padding-bottom: 1px;
+//         padding-top: 1px;
+//     }
+//     .nav-link {
+//         color: #fff;
+//         border: none;
+//     }
+//     .nav-link.active {
+//         background-color: #17a2b8 !important;
+//         color: #fff;
+//         border: none;
+//     }
+//     .nav-link:hover, .nav-link:focus {
+//         border: none;
+//     }
+//     .nav-item.active .nav-link.active {
+//         border: none;
+//         border-bottom: 4px solid #fff !important;
+//         font-weight: bold;
+//     }
+//     }
+// }
+
+// ::ng-deep .mat-accordion {
+//     .mat-expansion-panel {
+//         .mat-expansion-panel-header {
+//             height: 75px !important;
+//             .mat-expansion-indicator {
+//                 &:after {
+//                     padding: 6px;
+//                     border-width: 0 3px 3px 0;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .progress {
+//     height: 0.75rem;
+//     border-radius: 1.25rem;
+//     background-color: #f8f9fa;
+//     border: 1px solid #fff;
+//     ::ng-deep .progress-bar {
+//         background-color: #17a2b8 !important;
+//     }
+// }
+
+::ng-deep .myCourses {
+    .tab-container {
+        ul.nav-tabs {
+            background-color: #17a2b8 !important;
+            border-top-right-radius: 0.25rem;
+            border-top-left-radius: 0.25rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        li {
+            padding-bottom: 1px;
+            padding-top: 1px;
+        }
+        .nav-link {
+            color: #fff;
+            border: none;
+        }
+        .nav-link.active {
+            background-color: #17a2b8 !important;
+            color: #fff;
+            border: none;
+        }
+        .nav-link:hover, .nav-link:focus {
+            border: none;
+        }
+        .nav-item.active .nav-link.active {
+            border: none;
+            border-bottom: 4px solid #fff !important;
+            font-weight: bold;
+        }
+        }
+    }
+
+    .mat-accordion {
+        .mat-expansion-panel {
+            .mat-expansion-panel-header {
+                height: 75px !important;
+                .mat-expansion-panel-header-title {
+                    .indexNumber {
+                        width: 45px;
+                        height: 45px;
+                        border-width: 2px !important;
+                    }
+                }
+                .mat-expansion-indicator {
+                    &:after {
+                        padding: 6px;
+                        border-width: 0 3px 3px 0;
+                    }
+                }
+            }
+            .itemCompleted, .itemInprogress {
+                left: -8px;
+            }
+            .itemIncomplete {
+                left: -7px;
+            }
+        }
+    }
+
+    .recentActivityPart {
+        .videoDiv {
+            height: 160px;
+            .fa {
+                top: 31%;
+            }
+        }
+
+        .insights {
+            .progress {
+                height: 0.75rem;
+                border-radius: 1.25rem;
+                background-color: #f8f9fa;
+                border: 1px solid #fff;
+                .progress-bar {
+                    background-color: #17a2b8 !important;
+                }
+            }
+            .paraHead {
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+<ng-template #content1 let-modal>
+                      
+    <div class="modal-body mt-4">
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container">
+              <div class="col-lg-12">
+                  <h3 style=" font-family: Nunito;
+                  font-size: 24px;
+                  font-weight: bold;">Topic Name | Sub topic name</h3>
+                  <p style=" font-family: Nunito;
+                  font-size: 14px;">Reschedule your session to another time on same date</p>                              </div>
+          </div>
+          <div class="container d-flex justify-content-center">
+              <div class="row">
+          <div class="col-lg-4  mt-2 p-0">
+
+            <mat-form-field appearance="fill">
+                <mat-label style="font-weight:500">Date</mat-label>
+                <mat-select [formControl]="courses" multiple class="select">
+                    <mat-select-trigger>
+                        {{courses.value ? courses.value[0] : ''}}
+                        <span *ngIf="courses.value?.length > 1"
+                            class="example-additional-selection">
+                            (+{{courses.value.length - 1}}
+                            {{courses.value?.length === 2 ? 'other' : 'others'}})
+                        </span>
+                    </mat-select-trigger>
+                    <mat-option *ngFor="let courses of courseList" [value]="courses">{{courses}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <mat-form-field appearance="fill">
+                <mat-label>Start Time</mat-label>
+                <mat-select [(value)]="selected">
+                    <mat-option>None</mat-option>
+                    <mat-option value="option1">Option 1</mat-option>
+                    <mat-option value="option2">Option 2</mat-option>
+                    <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-3 mt-2">
+            <mat-form-field appearance="fill">
+                <mat-label>End Time</mat-label>
+                <mat-select [(value)]="selected">
+                    <mat-option>None</mat-option>
+                    <mat-option value="option">Option </mat-option>
+                    <mat-option value="option">Option </mat-option>
+                    <mat-option value="option">Option </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    </div>
+    <div class="col-lg-12 text-center pt-5">
+        <button class="btn btn-info btn-lg w-50">RESCHEDULE SESSION</button>
+    </div>
+</div>
+
+  </ng-template>
+
+  <a routeLink=''><button style="font-size: 12px; color: #3a5edd;" class="btn btn-white p-0" (click)="opens(content1)"> Reschedule</button></a>

@@ -1,0 +1,56 @@
+<div class="mat-dialog-content mat-typography">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 qNumbersDiv">
+                <div class="my-5">
+                    <ul class="list-group text-center mx-auto">
+                        <li (click)="activeAssignment = 1;getAssignmentInformation(this.data.problem[0].p1, 1)"
+                          [ngClass]="{'border-primary text-primary' : activeAssignment === 1, 'border-dark text-dark' : activeAssignment !== 1}"
+                          class="list-group-item border rounded-circle p-0 my-3 bg-transparent">
+                            <div class="my-3 font-weight-bold">Q1</div>
+                        </li>
+                        <li (click)="activeAssignment = 2;getAssignmentInformation(this.data.problem[0].p2, 2)"
+                          [ngClass]="{'border-primary text-primary' : activeAssignment === 2, 'border-dark text-dark' : activeAssignment !== 2}"
+                          class="list-group-item border rounded-circle p-0 my-3 bg-transparent">
+                            <div class="my-3 font-weight-bold">Q2</div>
+                        </li>
+                        <li (click)="activeAssignment = 3;getAssignmentInformation(this.data.problem[0].p3, 3)"
+                        [ngClass]="{'border-primary text-primary' : activeAssignment === 3, 'border-dark text-dark' : activeAssignment !== 3}"
+                          class="list-group-item border rounded-circle p-0 my-3 bg-transparent">
+                            <div class="my-3 font-weight-bold">Q3</div>
+                        </li>
+                        <li (click)="activeAssignment = 4;getAssignmentInformation(this.data.problem[0].p4, 4)"
+                        [ngClass]="{'border-primary text-primary' : activeAssignment === 4, 'border-dark text-dark' : activeAssignment !== 4}"
+                          class="list-group-item border rounded-circle p-0 my-3 bg-transparent">
+                            <div class="my-3 font-weight-bold">Q4</div>
+                        </li>
+                        <li (click)="activeAssignment = 5;getAssignmentInformation(this.data.problem[0].p5, 5)"
+                        [ngClass]="{'border-primary text-primary' : activeAssignment === 5, 'border-dark text-dark' : activeAssignment !== 5}"
+                          class="list-group-item border rounded-circle p-0 my-3 bg-transparent">
+                            <div class="my-3 font-weight-bold">Q5</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-11">
+                <div class="p-4">
+                    <h2 class="font-weight-bold">Your Score - 0 </h2>
+                    <h4 class="font-weight-bold mb-1">Min marks for passing - 90</h4>
+                    <p class="mb-0">Marks depends on the level of problem solved.</p>
+                    <p><strong>Beginner</strong> - 10 marks <strong>  Intermediate</strong> - 20 marks <strong>  Advanced</strong> - 30 marks</p>
+                    <p class="questionPara" >
+                        {{assignmentRes?.question}}
+                    </p>
+                    <!-- <p class="questionPara">{{assignmentRes?.explanation}}</p> -->
+                    <p class="mt-3"><strong>Level - {{assignmentRes?.level === 3 ? 'Tough' : assignmentRes?.level === 2 ? 'Medium' : 'Easy'}}</strong> <strong class="ml-5">Time - 15 min</strong></p>
+                </div>
+                <div class="mt-5 pt-3 text-center">
+                    <button class="btn btn-primary btn-sm text-uppercase mb-3 px-5" (click)="openAssignment()">start coding</button>
+                    <p class="mb-4">
+                        <a><u>How Assignment works?</u></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

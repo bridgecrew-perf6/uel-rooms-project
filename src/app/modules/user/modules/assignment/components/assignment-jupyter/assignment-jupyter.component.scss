@@ -1,0 +1,18 @@
+.assignmentJupter {
+    .card-header {
+        background-color: #e4ecf3;
+    }
+    .frameHeight {
+        height: calc(100vh - 70px);
+    }
+    .secondCard {
+        border-radius: 10px !important;
+        .secondCardBody {
+            padding: 12px;
+            p.cardTitle strong, p {
+                font-size: 14px;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}

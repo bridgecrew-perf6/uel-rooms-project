@@ -1,0 +1,45 @@
+<div class="col-md-12">
+    <h2>PSGA</h2>
+    <section class = "sec">
+    <br />
+    <table class = "table"> 
+    <th class = "th">
+      <button type="submit" class= "btn myButton1" (click)="change(1,'myButton1')"  value="1" id="myButton1"> Crutial </button>
+      <button type="submit" class= "btn myButton2" (click)="change(2,'myButton2')"  value="2" id="myButton2"> Patern Number  </button>
+      <button type="submit"  class="btn myButton3" (click)="change(3,'myButton3')"  value="3" id="myButton3"> Question  </button>
+      <button type="submit"  class="btn myButton4" (click)="change(4,'myButton4')"  value="4" id="myButton4"> Pattern </button>
+      <button type="submit"  class="btn myButton5" (click)="change(5,'myButton5')"  value="5" id="myButton5"> Node KS  </button>
+      <button type="submit"  class="btn myButton6" (click)="change(6,'myButton6')"  value="6" id="myButton6"> Edge PSS  </button>
+      <button type="submit"  class="btn myButton7" (click)="change(7,'myButton7')"  value="7" id="myButton7"> PS Score  </button>
+      <button type="submit"  class="btn myButton8" (click)="change(8,'myButton8')"  value="8" id="myButton8"> K Score  </button>
+      
+    </th>
+    
+    </table> 
+    
+    
+    <ng-template class = "page1" [ngIf] = " id == 1  ">
+        <br /> 
+        <ol><li *ngFor="let i of ques "> <a href="http://3.6.88.214/hub/user-redirect/notebooks/Assignments/boot_c2_all_questions/{{data.data.tag}}.ipynb">{{ i }}</a><br/><br/>  </li></ol>
+    
+    </ng-template>
+    
+    <ng-template  class = "page1" [ngIf] = " id == 2 || id == 7 || id == 8" >
+        <br />  
+       <ol> <li *ngFor="let j of item | keyvalue">{{ j.key }} <br/><br/> </li></ol>
+    </ng-template>
+    
+    <ng-template  class = "page1" [ngIf] = " id == 5 || id == 3   || id == 6 " >
+        <br /> 
+        <ol><li *ngFor="let j of item | keyvalue"> {{ j.key.question }}  <br/> </li></ol>
+    </ng-template>
+     
+     <ng-template  class = "page1" [ngIf] = " id == 4  " >
+        <br /> 
+        <ol><li *ngFor="let j of item "> {{ j }} <br/><br/> </li></ol>
+    </ng-template>
+      
+     
+    </section>
+    
+</div>

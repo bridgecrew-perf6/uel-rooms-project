@@ -1,0 +1,147 @@
+.exploreCousers {
+    .courseDetails {
+        a {
+            color: #fff;
+        }
+        p {
+            // color: #5A5A5A !important;
+            font-size: 18px !important;
+        }
+    }
+    .textMain {
+        width: 490px;
+        color: #fff;
+        font-size: 56px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 80px;
+    }
+    .subText {
+    width: 390px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 34px;
+    }
+    .subHeadLine {
+        width: 340px;
+        color: #383B41;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 54px;
+        text-align: center;
+    }
+    .headLineBorder {
+        box-sizing: border-box;
+        width: 95px;
+        // border: 3px solid #4C4C4C;
+        border: 3px solid #17a2b8;
+        border-radius: 7.5px;
+        // background-color: #4C4C4C;
+        margin-left: 25px;
+    }
+
+    .trendingCourses {
+        .outerCard {
+            height: 334px;
+            // width: 360px;
+            border-radius: 10px;
+            background-color: #17a2b8;
+            h3 {
+                font-weight: 600;
+                color: #fff;
+                line-height: 36px;
+            }
+            p {
+                font-size: 24px;
+                letter-spacing: 0;
+                line-height: 26px;
+                color: #fff;
+            }
+            .innercard {
+                height: 187px;
+                // width: 360px;
+                border-radius: 10px;
+                background-color: #EAEAEA;
+                .fa {
+                    color: #AEAEAE;
+                }
+            }
+        }
+        .fa {
+            color: #fff;
+        }
+        .innercardHorizantal {
+                height: 183px;
+                width: 40%;
+                border-radius: 10px;
+                background-color: #EAEAEA;
+                .fa {
+                    color: #AEAEAE;
+                }
+        }
+        .outerCardHorizantal {
+            height: 183px;
+            border-radius: 10px;
+            background-color: #17a2b8;
+            h3 {
+                font-weight: 600;
+                color: #fff;
+                line-height: 36px;
+            }
+            p {
+                font-size: 24px;
+                letter-spacing: 0;
+                line-height: 26px;
+                color: #fff;
+            }
+        }
+        .innercardHorizantal + div {
+            width: 60%;
+        }
+    }
+    .selfAssessment {
+        .wrapper {
+            height: 409px;
+            width: 1280px;
+            border-radius: 10px;
+            background-color: #17a2b8;
+            h1 {
+                color: #fff;
+        font-size: 56px;
+        font-weight: bold;
+        line-height: 80px;
+    }
+    p {
+        color: #fff;
+    font-size: 24px;
+    line-height: 38px;
+    }
+    button {
+        color: #F7F7F7;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 24px;
+    border-radius: 4px;
+    background-color: #4C4C4C;
+    }
+            }
+    }
+    .upcomming {
+        .outerCardHorizantal, .innercardHorizantal {
+            height: 165px;
+            div {
+                color: #fff;
+            }
+        }
+    }
+    .TechPapers {
+        .subHeadLine {
+            width: 537px;
+        }
+    }
+
+}

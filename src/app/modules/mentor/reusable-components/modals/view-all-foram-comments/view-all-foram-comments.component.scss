@@ -1,0 +1,71 @@
+::ng-deep .mat-dialog-container {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    border-radius: 10px;
+    .modal-body {
+        min-height: 500px;
+        max-height: 500px;
+        overflow: auto;
+        .sort {
+            color: #3a5edd;
+            cursor: pointer;
+            .mat-icon {
+                position: relative;
+                top: 5px;
+                right: -5px;
+            }
+        }
+        .allComments {
+            .eachComment {
+                margin-bottom: 15px;
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+                h6 {
+                    font-weight: 600;
+                    line-height: 0.9;
+                }
+            }
+        }
+    }
+    .modal-footer {
+        justify-content: start;
+        display: block;
+        img {
+            width: 30px;
+            height: auto;
+        }
+        img.avatar {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+    }
+
+      /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+     
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e4e3e3; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e4e3e3; 
+  }
+}
+
+::ng-deep .customMenu {
+    border-radius: 10px !important;
+}

@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-4 shadow">
+            <div class="row">
+                <div class="col-12 col-md-5 bg-light border rounded border-right-0 d-none d-md-block">
+                    <div class="position-relative welcomeText">
+                        <h2 class="font-weight-bold text-center">Join AI EDUCATOR For Free</h2>
+                        <p class="text-center">Enter Your Details and start journey with us!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 border rounded">
+                    <form class="p-4" id="a-form" [formGroup]="registrationForm">
+                        <p class="text-success text-center" *ngIf="success">{{success}}</p>
+                        <p class="text-danger text-center" *ngIf="error">{{error}}</p>
+                        <div class="form-group">
+                            <label for="username">Name</label>
+                            <input type="name" id="name" class="form-control rounded-0" formControlName="username"
+                                placeholder="Enter Your Full Name" name="name">
+                            <small
+                                class="form-text text-muted">{{formErrors.checktouchedvaliddirty(registrationForm, 'username')}}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Email Address</label>
+                            <input type="email" class="form-control rounded-0" formControlName="email"
+                                placeholder="Enter Email Address" name="email">
+                            <small
+                                class="form-text text-muted">{{formErrors.checktouchedvaliddirty(registrationForm, 'email')}}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control rounded-0" formControlName="password"
+                                placeholder="Enter Password" name="password">
+                            <small
+                                class="form-text text-muted">{{formErrors.checktouchedvaliddirty(registrationForm, 'password')}}</small>
+                        </div>
+                        <div class="my-4 px-5">
+                            <button type="submit" class="btn btn-block btn-primary rounded-0"
+                                (click)="registerUser()">SIGNUP</button>
+                        </div>
+                        <p class="text-center my-3">OR</p>
+                        <div class="text-center my-4">
+                            <i class="fa fa-2x fa-facebook-square text-primary" aria-hidden="true"></i>
+                            <i class="fa fa-2x fa-github-square text-dark mx-3" aria-hidden="true"></i>
+                            <i class="fa fa-2x fa-google text-success" aria-hidden="true"></i>
+                        </div>
+                        <p class="mt-4 text-center">Already A Member ? <a class="font-weight-bold"
+                                routerLink="/login"><u>Login</u></a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

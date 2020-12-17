@@ -1,0 +1,27 @@
+::ng-deep .matSelectpanel {
+    min-width: calc(100vw - 85vw);
+    margin-top: 28px;
+    border-radius: 0px;
+    margin-left: calc(100vw - 97vw);
+}
+::ng-deep .customMatSelector {
+    mat-label {
+        font-weight: 500;
+        color: #212121;
+    }
+    .mat-select-arrow {
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+}
+
+.gridDetail {
+    p, h6 {
+        margin-bottom: 0;
+    }
+    h6 {
+        font-weight: 600;
+    }
+}
+
+

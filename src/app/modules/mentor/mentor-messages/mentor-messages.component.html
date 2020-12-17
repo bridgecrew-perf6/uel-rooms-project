@@ -1,0 +1,916 @@
+<div class="container-fluid px-4">
+    <div class="row">
+        <div class="col-12 d-flex my-3">
+            <div>Message</div>
+            <div class="ml-auto">Cloud Computing <i class="fa fa-chevron-down mx-4" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-header border-bottom-0 p-0 bg-transparent">
+                    <div>
+                        <tabset class="customTabset">
+                            <tab heading="Students" id="students" (selectTab)="onSelect($event)">
+                                <form class="mt-2 px-4">
+                                    <mat-form-field [floatLabel]="'never'" class="w-100">
+                                        <input type="search" matInput placeholder="search">
+                                        <mat-icon matSuffix>search</mat-icon>
+                                    </mat-form-field>
+                                </form>
+                                <ul class="list-group chatList mt-2 overflow-auto px-0">
+                                    <li class="d-flex py-1 mb-2 active">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                            <span class="notify-badge">1</span>
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6>Aditya Agrawal</h6>
+                                            <progressbar [value]="25"></progressbar>
+                                            <small class="">25% complete</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </tab>
+                            <tab heading="Group" id="group" (selectTab)="onSelect($event)">
+                                <form class="mt-2 px-4">
+                                    <mat-form-field [floatLabel]="'never'" class="w-100">
+                                        <input type="search" matInput placeholder="search">
+                                        <mat-icon matSuffix>search</mat-icon>
+                                    </mat-form-field>
+                                </form>
+                                <ul class="list-group chatList mt-2 overflow-auto px-0">
+                                    <li class="d-flex py-1 mb-3 active">
+                                        <div class="col-2 pr-0">
+                                            <i class="fa fa-lg fa-users rounded-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-10 align-self-center">
+                                            <h6>CloudComputing_Group1</h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-3">
+                                        <div class="col-2 pr-0">
+                                            <i class="fa fa-lg fa-users rounded-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-10 align-self-center">
+                                            <h6>CloudComputing_Group2</h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-3">
+                                        <div class="col-2 pr-0">
+                                            <i class="fa fa-lg fa-users rounded-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-10 align-self-center">
+                                            <h6>CloudComputing_Group3</h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-3">
+                                        <div class="col-2 pr-0">
+                                            <i class="fa fa-lg fa-users rounded-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-10 align-self-center">
+                                            <h6>CloudComputing_Group4</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </tab>
+                            <tab heading="Mentors" id="mentors" (selectTab)="onSelect($event)">
+                                <form class="mt-2 px-4">
+                                    <mat-form-field [floatLabel]="'never'" class="w-100">
+                                        <input type="search" matInput placeholder="search">
+                                        <mat-icon matSuffix>search</mat-icon>
+                                    </mat-form-field>
+                                </form>
+                                <ul class="list-group chatList mt-2 overflow-auto px-0">
+                                    <li class="d-flex py-1 mb-3">
+                                        <div class="col-2 pr-0">
+                                            <i class="fa fa-lg fa-users rounded-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-10 align-self-center">
+                                            <h6>CloudComputing_Group1</h6>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2 active">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex py-1 mb-2">
+                                        <div class="col-2 pr-0 align-self-center">
+                                            <img class="img-fluid rounded-circle"
+                                                src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h6 class="mb-0">Aditya Agrawal</h6>
+                                            <small class="">Designation</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </tab>
+                        </tabset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="selectedTabId == 'students'" class="col-8 chatDetailWindow">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <div class="">
+                                    <img class="rounded-circle"
+                                        src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                </div>
+                                <div class="align-self-center ml-3">
+                                    <p class="mb-0">Aditya Agrawal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 text-right align-self-center">
+                            <img class="searchPng mr-4" src="assets/icons/search.svg">
+                            <img class="searchPng" src="assets/icons/attach.svg" style="transform: rotate(45deg);">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body overflow-auto">
+                    <div class="row inComminMessage mb-3">
+                        <div class="col-12 d-flex">
+                            <div class="avatarDiv">
+                                <img class="rounded-circle"
+                                    src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                            </div>
+                            <div class="messageDiv ml-3">
+                                <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">Aditya Agrawal</span>
+                                    <span class="mr-2 float-right">6:53 pm</span></small>
+                                <div class="messageText rounded position-relative">
+                                    <i class="fa fa-chevron-down hoverAction" [matMenuTriggerFor]="menu"
+                                        #menuTrigger="matMenuTrigger" [ngClass]="{ 'open': menuTrigger.menuOpen }"
+                                        aria-hidden="true"></i>
+                                    <p class="mb-0">Hi, sir, I had one doubt to ask</p>
+                                    <p class="mb-0">you.</p>
+                                    <mat-menu class="customMatMenu" #menu="matMenu" xPosition="before">
+                                        <button mat-menu-item>
+                                            <mat-icon>publish</mat-icon>
+                                            <span>Upvote Message</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>reply</mat-icon>
+                                            <span>Reply</span>
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row inComminMessage mb-3">
+                        <div class="col-12 d-flex">
+                            <div class="avatarDiv">
+                                <img class="rounded-circle"
+                                    src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                            </div>
+                            <div class="messageDiv ml-3">
+                                <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">Aditya Agrawal</span>
+                                    <span class="mr-2 float-right">6:53 pm</span></small>
+                                <div class="messageText rounded">
+                                    <p class="mb-0">Can you explain me about cloud</p>
+                                    <p class="mb-0">Computing second topic in depth?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row outGoingMessage mb-3">
+                        <div class="col-12 d-flex justify-content-end">
+                            <div class="messageDiv mr-3">
+                                <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">You</span> <span
+                                        class="mr-2 float-right"><span class="doneAll material-icons">done_all</span>
+                                        6:53 pm</span></small>
+                                <div class="messageText rounded position-relative">
+                                    <i class="fa fa-chevron-down hoverAction" [matMenuTriggerFor]="outgoingMsgMenu"
+                                        #outgoingMsgMenuTrigger="matMenuTrigger"
+                                        [ngClass]="{ 'opened': outgoingMsgMenuTrigger.menuOpen }"
+                                        aria-hidden="true"></i>
+                                    <p class="mb-0">Book an appointment for tomorrow afternoon of 30</p>
+                                    <p class="mb-0">mins, will explain it to you in-depth then.</p>
+                                    <mat-menu class="customMatMenu" #outgoingMsgMenu="matMenu" xPosition="before">
+                                        <button mat-menu-item>
+                                            <mat-icon>delete</mat-icon>
+                                            <span>Delete</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>create</mat-icon>
+                                            <span>Edit</span>
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+                            <div class="avatarDiv">
+                                <img class="rounded-circle"
+                                    src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent py-0">
+                    <form class="">
+                        <mat-form-field [floatLabel]="'never'" class="w-100">
+                            <input type="search" matInput placeholder="Type your message here">
+                            <img class="mb-2" matSuffix src="assets/icons/telegram.svg">
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="selectedTabId == 'group'" class="col-8 chatDetailWindow">
+            <div class="row" [ngClass]="{ 'no-gutters' : showmemberDetails}">
+                <div [ngClass]="{ 'col-12' : !showmemberDetails, 'col-7': showmemberDetails }">
+                    <div class="card border-0 shadow-sm" [ngClass]="{ 'rounded-right' : showmemberDetails}">
+                        <div class="card-header bg-transparent">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <!-- <img class="rounded-circle" src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png"> -->
+                                            <i class="fa fa-users rounded-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="align-self-center ml-3 chatTitle">
+                                            <p class="mb-0">CloudComputing_Group1</p>
+                                            <small class="pointer" (click)="showmemberDetails = !showmemberDetails">6
+                                                members</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right align-self-center">
+                                    <img class="searchPng mr-4" src="assets/icons/search.svg">
+                                    <img class="searchPng" src="assets/icons/attach.svg"
+                                        style="transform: rotate(45deg);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body overflow-auto">
+                            <div class="row inComminMessage mb-3">
+                                <div class="col-12 d-flex">
+                                    <div class="avatarDiv">
+                                        <img class="rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="messageDiv ml-3">
+                                        <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">Aditya
+                                                Agrawal</span> <span class="mr-2 float-right"><i *ngIf="upVote"
+                                                    class="fa fa-arrow-circle-up mr-1" aria-hidden="true"></i> 6:53
+                                                pm</span></small>
+                                        <div class="messageText rounded position-relative">
+                                            <i class="fa fa-chevron-down hoverAction" [matMenuTriggerFor]="menu"
+                                                #menuTrigger="matMenuTrigger"
+                                                [ngClass]="{ 'open': menuTrigger.menuOpen }" aria-hidden="true"></i>
+                                            <p class="mb-0">Hi, sir, I had one doubt to ask</p>
+                                            <p class="mb-0">you.</p>
+                                            <mat-menu class="customMatMenu" #menu="matMenu" xPosition="before">
+                                                <button mat-menu-item (click)="upVote = true">
+                                                    <mat-icon>publish</mat-icon>
+                                                    <span>Upvote Message</span>
+                                                </button>
+                                                <button mat-menu-item (click)="reply()">
+                                                    <mat-icon>reply</mat-icon>
+                                                    <span>Reply</span>
+                                                </button>
+                                            </mat-menu>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row inComminMessage mb-3">
+                                <div class="col-12 d-flex">
+                                    <div class="avatarDiv">
+                                        <img class="rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="messageDiv ml-3">
+                                        <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">Aditya
+                                                Agrawal</span> <span class="mr-2 float-right">6:53 pm</span></small>
+                                        <div class="messageText rounded">
+                                            <p class="mb-0">Can you explain me about cloud</p>
+                                            <p class="mb-0">Computing second topic in depth?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row outGoingMessage mb-3">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <div class="messageDiv mr-3">
+                                        <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">You</span>
+                                            <span class="mr-2 float-right"><span
+                                                    class="doneAll material-icons">done_all</span> 6:53
+                                                pm</span></small>
+                                        <div class="messageText rounded position-relative">
+                                            <i class="fa fa-chevron-down hoverAction"
+                                                [matMenuTriggerFor]="outgoingMsgMenu"
+                                                #outgoingMsgMenuTrigger="matMenuTrigger"
+                                                [ngClass]="{ 'opened': outgoingMsgMenuTrigger.menuOpen }"
+                                                aria-hidden="true"></i>
+                                            <p class="mb-0">Book an appointment for tomorrow afternoon of 30</p>
+                                            <p class="mb-0">mins, will explain it to you in-depth then.</p>
+                                            <mat-menu class="customMatMenu" #outgoingMsgMenu="matMenu"
+                                                xPosition="before">
+                                                <button mat-menu-item>
+                                                    <mat-icon>delete</mat-icon>
+                                                    <span>Delete</span>
+                                                </button>
+                                                <button mat-menu-item>
+                                                    <mat-icon>create</mat-icon>
+                                                    <span>Edit</span>
+                                                </button>
+                                            </mat-menu>
+                                        </div>
+                                    </div>
+                                    <div class="avatarDiv">
+                                        <img class="rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent py-0">
+                            <div *ngIf="isReply" class="row replyRow">
+                                <div class="col-11">
+                                    <div class="replyMessage rounded">
+                                        <p class="font-weight-bold mb-1 small">Aditya Agrawal</p>
+                                        <p class="mb-0">Can you explain me about cloud</p>
+                                        <p class="mb-0">Computing second topic in depth?</p>
+                                    </div>
+                                </div>
+                                <div class="col-1 align-self-center text-center">
+                                    <i class="fa fa-lg fa-times pointer" (click)="isReply = false"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <form class="">
+                                <mat-form-field [floatLabel]="'never'" class="w-100">
+                                    <input type="search" matInput placeholder="Type your message here">
+                                    <img class="mb-2" matSuffix src="assets/icons/telegram.svg">
+                                </mat-form-field>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="showmemberDetails" class="col-5">
+                    <div class="card border-0 shadow-sm memberDetails"
+                        [ngClass]="{ 'rounded-left' : showmemberDetails}">
+                        <div class="card-header bg-transparent">
+                            <div class="row">
+                                <div class="col-10 align-self-center">
+                                    <p class="mb-0">Member Details</p>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <i class="fa fa-lg fa-times bg-transparent text-body pointer" aria-hidden="true"
+                                        (click)="showmemberDetails = false"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body overflow-auto p-0">
+                            <ul class="list-group chatList mt-3 overflow-auto px-0">
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>Aditya Agrawal</h6>
+                                        <progressbar [value]="25"></progressbar>
+                                        <small class="">25% complete</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="selectedTabId == 'mentors'" class="col-8 chatDetailWindow">
+            <div class="row" [ngClass]="{ 'no-gutters' : showMentorMemberDetails}">
+                <div [ngClass]="{ 'col-12' : !showMentorMemberDetails, 'col-7': showMentorMemberDetails }">
+                    <div class="card border-0 shadow-sm" [ngClass]="{ 'rounded-right' : showMentorMemberDetails}">
+                        <div class="card-header bg-transparent">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <!-- <img class="rounded-circle" src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png"> -->
+                                            <i class="fa fa-users rounded-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="align-self-center ml-3 chatTitle">
+                                            <p class="mb-0">CloudComputing_Group1</p>
+                                            <small class="pointer"
+                                                (click)="showMentorMemberDetails = !showMentorMemberDetails">23
+                                                members</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right align-self-center">
+                                    <img class="searchPng mr-4" src="assets/icons/search.svg">
+                                    <img class="searchPng" src="assets/icons/attach.svg"
+                                        style="transform: rotate(45deg);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body overflow-auto">
+                            <div class="row inComminMessage mb-3">
+                                <div class="col-12 d-flex">
+                                    <div class="avatarDiv">
+                                        <img class="rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="messageDiv ml-3">
+                                        <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">Aditya
+                                                Agrawal</span> <span class="mr-2 float-right"><i *ngIf="upVote"
+                                                    class="fa fa-arrow-circle-up mr-1" aria-hidden="true"></i> 6:53
+                                                pm</span></small>
+                                        <div class="messageText rounded position-relative">
+                                            <i class="fa fa-chevron-down hoverAction" [matMenuTriggerFor]="menu"
+                                                #menuTrigger="matMenuTrigger"
+                                                [ngClass]="{ 'open': menuTrigger.menuOpen }" aria-hidden="true"></i>
+                                            <p class="mb-0">Hi, sir, I had one doubt to ask</p>
+                                            <p class="mb-0">you.</p>
+                                            <mat-menu class="customMatMenu" #menu="matMenu" xPosition="before">
+                                                <button mat-menu-item (click)="reply()">
+                                                    <mat-icon>reply</mat-icon>
+                                                    <span>Reply</span>
+                                                </button>
+                                            </mat-menu>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row inComminMessage mb-3">
+                                <div class="col-12 d-flex">
+                                    <div class="avatarDiv">
+                                        <img class="rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="messageDiv ml-3">
+                                        <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">Aditya
+                                                Agrawal</span> <span class="mr-2 float-right">6:53 pm</span></small>
+                                        <div class="messageText rounded">
+                                            <p class="mb-0">Can you explain me about cloud</p>
+                                            <p class="mb-0">Computing second topic in depth?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row outGoingMessage mb-3">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <div class="messageDiv mr-3">
+                                        <small><span class="mr-5 text-uppercase" style="color: #a3a3a3;">You</span>
+                                            <span class="mr-2 float-right"><span
+                                                    class="doneAll material-icons">done_all</span> 6:53
+                                                pm</span></small>
+                                        <div class="messageText rounded position-relative">
+                                            <i class="fa fa-chevron-down hoverAction"
+                                                [matMenuTriggerFor]="outgoingMsgMenu"
+                                                #outgoingMsgMenuTrigger="matMenuTrigger"
+                                                [ngClass]="{ 'opened': outgoingMsgMenuTrigger.menuOpen }"
+                                                aria-hidden="true"></i>
+                                            <p class="mb-0">Book an appointment for tomorrow afternoon of 30</p>
+                                            <p class="mb-0">mins, will explain it to you in-depth then.</p>
+                                            <mat-menu class="customMatMenu" #outgoingMsgMenu="matMenu"
+                                                xPosition="before">
+                                                <button mat-menu-item>
+                                                    <mat-icon>delete</mat-icon>
+                                                    <span>Delete</span>
+                                                </button>
+                                                <button mat-menu-item>
+                                                    <mat-icon>create</mat-icon>
+                                                    <span>Edit</span>
+                                                </button>
+                                            </mat-menu>
+                                        </div>
+                                    </div>
+                                    <div class="avatarDiv">
+                                        <img class="rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent py-0">
+                            <div *ngIf="isReply" class="row replyRow">
+                                <div class="col-11">
+                                    <div class="replyMessage rounded">
+                                        <p class="font-weight-bold mb-1 small">Aditya Agrawal</p>
+                                        <p class="mb-0">Can you explain me about cloud</p>
+                                        <p class="mb-0">Computing second topic in depth?</p>
+                                    </div>
+                                </div>
+                                <div class="col-1 align-self-center text-center">
+                                    <i class="fa fa-lg fa-times pointer" (click)="isReply = false"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <form class="">
+                                <mat-form-field [floatLabel]="'never'" class="w-100">
+                                    <input type="search" matInput placeholder="Type your message here">
+                                    <img class="mb-2" matSuffix src="assets/icons/telegram.svg">
+                                </mat-form-field>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="showMentorMemberDetails" class="col-5">
+                    <div class="card border-0 shadow-sm memberDetails"
+                        [ngClass]="{ 'rounded-left' : showMentorMemberDetails}">
+                        <div class="card-header bg-transparent">
+                            <div class="row">
+                                <div class="col-10 align-self-center">
+                                    <p class="mb-0">Member Details</p>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <i class="fa fa-lg fa-times bg-transparent text-body pointer" aria-hidden="true"
+                                        (click)="showMentorMemberDetails = false"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body overflow-auto p-0">
+                            <ul class="list-group chatList mt-3 overflow-auto px-0">
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                                <li class="d-flex py-1 mb-2 active">
+                                    <div class="col-2 pr-0">
+                                        <img class="img-fluid rounded-circle"
+                                            src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="mb-0">Aditya Agrawal</h6>
+                                        <small class="">Designation</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

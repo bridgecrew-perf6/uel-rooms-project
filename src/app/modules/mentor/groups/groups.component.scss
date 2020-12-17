@@ -1,0 +1,25 @@
+@import url( "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
+::ng-deep.mat-form-field-flex{
+    background-color: transparent !important;
+    padding-left: 0px !important;
+}
+::ng-deep.mat-select-panel{
+    position: absolute;
+    top:38px;
+    left: 30px;
+}
+
+.group-names{
+    .group_name{
+     font-family: nunito;
+     font-size: 14px;
+     font-weight: bold;
+    }
+    .start_date,.end_date,.members{
+        font-family: nunito;
+        font-size: 14px;
+        font-style: normal;
+
+    }
+}

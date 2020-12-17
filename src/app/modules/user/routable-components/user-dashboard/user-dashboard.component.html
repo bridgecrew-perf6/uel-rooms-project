@@ -1,0 +1,133 @@
+<div class="container-fluid">
+    <div class="row bg-primary pt-4">
+        <div class="col-11 pl-5">
+            <h3 class="text-white">Welcome <strong>{{(auth.activeUserInfo | async).cgd[0].name}}</strong></h3>
+        </div>
+        <div class="col-11 pl-5 text-white">
+            <div class="d-flex py-4">
+                <h4 class="">Your Courses</h4>
+                <button class="btn btn-light btn-sm ml-auto"><i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                    Add New Courses</button>
+            </div>
+            <div class="ml-2 pl-5 mb-3">
+                <mat-chip-list class="" aria-label="Fish selection">
+                    <mat-chip class="bg-white" *ngFor="let course of auth.subscribedCourses$ | async;let i = index;" (click)="activeCourseIndex = i;getFilterData();getLastActivityofUser();">{{course.course__name}}</mat-chip>
+                    <!-- <mat-chip class="bg-white">One fish Primary fish One fish Primary fish</mat-chip> -->
+                </mat-chip-list>
+            </div>
+        </div>
+        <div class="bg-white col-10 my-4 offset-1 rounded">
+            <p class="mb-0 pt-2"><strong style="color: #32325d">Progress</strong></p>
+            <div class="d-flex my-3">
+                <div style="width: 90%;">
+                    <progressbar class="progress-striped active my-2" [value]="(auth.subscribedCourses$ | async)[activeCourseIndex].completed_perc" type="primary">
+                        <i>{{(auth.subscribedCourses$ | async)[activeCourseIndex].completed_perc}}%</i>
+                    </progressbar>
+                </div>
+                <div class="text-right" style="width: 10%">
+                    <a type="button" class="btn btn-primary btn-sm" [routerLink]="'course-concepts/' + registeredCourseId + '/' + (auth.subscribedCourses$ | async)[activeCourseIndex].course__id + '/content'" [queryParams]="{chapterslno: this.resumeData.course_slnno, topicslno: this.resumeData.topic_slno}" >Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row bg-primary">
+        <div class="col-12">
+            <div class="card border-info shadow-sm">
+                <div class="bg-info card-header py-2 text-white border-0 d-flex">
+                    <h4 class="mb-0"><i class="fa fa-book mr-2" aria-hidden="true"></i> Your Courses</h4>
+                    <button class="btn btn-outline-light btn-sm ml-auto"><i class="fa fa-plus mr-2"
+                            aria-hidden="true"></i> Add New Courses</button>
+                </div>
+                <div class="bg-light border border-bottom-0 border-info card-body">
+                    <mat-chip-list aria-label="Fish selection">
+                        <mat-chip>One fish Primary fish</mat-chip>
+                        <mat-chip>One fish Primary fish One fish Primary fish</mat-chip>
+                        <mat-chip>One fish Primary fish</mat-chip>
+                        <mat-chip>One fish Primary fish One fish Primary fish</mat-chip>
+                        <mat-chip>One fish Primary fish</mat-chip>
+                        <mat-chip>One fish Primary fish One fish Primary fish</mat-chip>
+                    </mat-chip-list>
+                </div>
+                <div class="bg-light border border-info card-footer border-top-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-0 text-info"><strong>Progress</strong></p>
+                            <div class="d-flex my-3">
+                                <div style="width: 90%;">
+                                    <progressbar class="progress-striped active my-2" [value]="75" type="info">
+                                        <i>75%</i>
+                                    </progressbar>
+                                </div>
+                                <div class="text-right" style="width: 10%">
+                                    <button class="btn btn-info btn-sm">Resume</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row mt-4">
+        <div class="col-2 offset-4">
+            <div class="form-group">
+                <select class="form-control rounded-0" id="exampleFormControlSelect1" [(ngModel)]="selectedCourseId" (change)="getGraphData()">
+                    <option [value]="'all'">All</option>
+                    <option *ngFor="let member of groupMembers" [value]="member.user_id">{{member.user__username}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="form-group">
+                <select class="form-control rounded-0" id="exampleFormControlSelect1" [(ngModel)]="selectedUserId" (change)="getGraphData()">
+                    <option [value]="'all'">ALL</option>
+                    <option *ngFor="let course of coursesInfo" [value]="course.sl_no">{{course.name}}</option>
+                </select>
+            </div>
+        </div>
+        <!-- <button (click)="highletgrpah()">check</button> -->
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-primary shadow-sm">
+                <div class="bg-primary card-header py-2 text-white border-0">
+                    <h4 class="mb-0"><i class="fa fa-area-chart mr-2" aria-hidden="true"></i>Assignment Graph</h4>
+                </div>
+                <div class="bg-light border border-primary card-body">
+                    <div class="row">
+                        <div class="border col-12 text-center" *ngIf="dataCame">
+                            <!-- <h1>GRAPH HERE</h1> -->
+                            <!-- <highcharts-chart  [(update)]="dataCame" [Highcharts]="assignment" [options]="assignmentOptions" style="width: 100%; height: 400px; display: block;">
+                            </highcharts-chart> -->
+                            <highcharts-chart [(update)]="updateFlag" [oneToOne]="true"  [Highcharts]="assignment" [options]="assignmentOptionsnew" style="width: 100%; height: 400px; display: block;">
+                            </highcharts-chart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-4">
+        <div class="col-12">
+            <div class="card border-primary shadow-sm">
+                <div class="bg-primary card-header py-2 text-white border-0">
+                    <h4 class="mb-0"><i class="fa fa-bar-chart mr-2" aria-hidden="true"></i>MCQ Graph</h4>
+                </div>
+                <div class="bg-light border border-primary card-body">
+                    <div class="row">
+                        <div class="border col-12 text-center" *ngIf="dataCame">
+                            <!-- <h1>GRAPH HERE</h1> -->
+                            <!-- <highcharts-chart  [(update)]="dataCame" [Highcharts]="mcq" [options]="mcqOptions" style="width: 100%; height: 400px; display: block;">
+                            </highcharts-chart> -->
+                            <highcharts-chart [(update)]="updateFlag" [oneToOne]="true" [Highcharts]="mcq" [options]="mcqOptionsNew" style="width: 100%; height: 400px; display: block;">
+                            </highcharts-chart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

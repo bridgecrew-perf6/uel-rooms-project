@@ -1,0 +1,171 @@
+.sidenavContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f6f9fa;
+    .mat-drawer-content {
+        overflow-x: hidden;
+    }
+    .mat-toolbar {
+        opacity: 1;
+        padding: 35px;
+        img {
+            width: 200px;
+            height: auto;
+        }
+        ul {
+            li {
+                float: left;
+                list-style: none;
+                margin: 15px;
+                .fa {
+                    padding: 10px;
+                    background-color: #dee2e6;
+                    color: #5c5c5c;
+                }
+            }
+        }
+    }
+}
+
+.rightSideNav {
+    position: absolute;
+    background-color: rgba(75, 81, 120, 0.6);
+    width: 100%;
+    min-height: calc(100% - 11%);
+    max-height: calc(100% - 11%);
+    overflow: auto;
+    z-index: 2;
+    top: calc(100vh - 586px);
+    ::ng-deep .customTabset {
+        ul.nav-tabs {
+            padding-right: 16px;
+            padding-left: 16px;
+            .nav-item {
+                a {
+                    color: #1f2343;
+                }
+            }
+            .nav-item.active {
+                border-bottom: 2px solid #3a5edd;
+                a {
+                    color: #3a5edd;
+                    font-weight: 600;
+                }
+            }
+            .nav-item.active > a, .nav-link:hover, .nav-link:focus {
+                background-color: transparent;
+                border-color: transparent;
+            }
+        }
+        .tab-content {
+            background-color: transparent;
+            .mat-form-field-suffix {
+                top: 8px;
+            }
+            ul.chatList {
+                padding-left: 0;
+                padding-right: 0;
+                min-height: 450px;
+                max-height: 450px;
+                li {
+                    list-style: none;
+                    border-left: 5px solid transparent;
+                    img {
+                        width: 60px;
+                        height: auto;
+                    }
+                    .fa {
+                        background-color: #dee2e6;
+                        color: #3a5edd;
+                        width: 45px;
+                        height: 45px;
+                        text-align: center;
+                        line-height: 45px;
+                    }
+                    h6 {
+                        font-weight: 600;
+                    }
+                    .progress {
+                        border-radius: 10px;
+                        height: 6px;
+                        .progress-bar {
+                            background-color: #b5b5b5;
+                        }
+                    }
+                    .notify-badge {
+                        position: absolute;
+                        background: #3a5edd;
+                        height: 15px;
+                        bottom: 0px;
+                        right: 0;
+                        width: 15px;
+                        text-align: center;
+                        line-height: 0.9rem;
+                        font-size: 10px;
+                        border-radius: 50%;
+                        color:white;
+                        border: 1px solid #3a5edd;
+                    }
+                }
+                li.active {
+                    border-left: 5px solid #3b5fdd;
+                }
+            }
+        }
+    }
+      /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+     
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e4e3e3; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e4e3e3; 
+  }
+    .rightSideNavBody {
+        width: 350px;
+        position: relative;
+        right: 0px;
+        float: right;
+        border-radius: 0;
+        .notificationMain {
+            &:hover {
+                background: #e4e3e3; 
+            }
+        }
+        .notifictionsContainer {
+            min-height: 515px;
+            max-height: 515px;
+            overflow: auto;
+            .imgDiv {
+                width: 65px;
+                height: auto;
+                padding: 13px;
+            }
+            .notifications {
+                line-height: 1.1;
+                p {
+                    font-weight: 600;
+                }
+                a {
+                    color: #007bff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

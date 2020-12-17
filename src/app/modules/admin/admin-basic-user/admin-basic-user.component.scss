@@ -1,0 +1,73 @@
+::ng-deep pagination {
+    ul {
+        margin: 8px;
+        li {
+            margin-right: 15px;
+            a {
+                background-color: #fff !important;
+                border-radius: 50% !important;
+                border-color: #000;
+                color: #000 !important;
+                line-height: 1 !important;
+                border-width: 2px !important;
+            }
+        }
+    }
+}
+
+::ng-deep pager {
+    ul {
+        margin: 8px;
+    }
+}
+
+th {
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 1;
+    color: rgba(0,0,0,.87);
+}
+tr {
+    td {
+        .fa {
+            background-color: #dee2e6;
+            padding: 11px;
+            border-radius: 50%;
+            line-height: 1;
+        }
+    }
+}
+
+        /* width */
+  .demo::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  .demo::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+     
+  /* Handle */
+  .demo::-webkit-scrollbar-thumb {
+    background: #e4e3e3; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .demo::-webkit-scrollbar-thumb:hover {
+    background: #e4e3e3; 
+  }
+
+  ::ng-deep .customMatMenu {
+    border-radius: 10px !important;
+    margin-top: 5px;
+    .mat-menu-content:not(:empty) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .mat-menu-item {
+            height: 40px;
+        }
+    }
+}
+

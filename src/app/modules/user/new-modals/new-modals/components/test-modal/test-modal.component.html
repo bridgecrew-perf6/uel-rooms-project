@@ -1,0 +1,140 @@
+<div *ngIf="!showResult">
+    <h5 mat-dialog-title class="px-4 rounded-top mb-0">MCQ - Sub
+        Topic 1.1 <span class="float-right"><i class="fa fa-times" (click)="dialogRef.close()" aria-hidden="true"></i></span></h5>
+    <div class="mat-typography">
+        <div class="p-4 bg-white">
+            <div class="card">
+                <div class="card-body">
+                    <div class="container-fluid questionsList">
+                        <div class="row">
+                            <div class="col-1 px-2">
+                                <div class="rounded-pill">
+                                    <ul class="h-100 justify-content-around list-group py-5">
+                                        <li *ngFor="let questionCount of totalNumbers;let i = index;" [attr.id]="i" class="list-group-item mb-4 mx-auto p-0 rounded-circle border-top" 
+                                        [ngClass]="{'text-primary border-primary' : count === i, 'text-dark border-dark' : count !== i }">
+                                            <div class="mt-2 text-center">{{questionCount + 1}}
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <!-- <p class="h6 my-2 p-2 text-right"><i class="fa fa-clock-o fa-lg mr-2"
+                                        aria-hidden="true"></i> 1:00</p> -->
+                                <div class="pb-5 px-4">
+                                    <h2 class="">{{questionResponse?.Question}}</h2>
+                                    <div class="py-4">
+                                        <form [formGroup]="answerResponse">
+                                            <div class="form-check mb-4" *ngFor="let ans of questionResponse?.Answers">
+                                                <input class="form-check-input" type="radio"
+                                                    formControlName="selectedanswer" id="selectedanswer"
+                                                    name="selectedanswer" [value]="ans">
+                                                <label class="form-check-label ml-3" for="selectedanswer"> {{ans.ans}}
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="mt-1 pt-5">
+                                        <button class="btn btn-info px-5"
+                                            (click)="[responses.push(answerResponse.value), getQuestion(count + 1), scroll(count)]"
+                                            *ngIf="count !== (questionResponse?.totalcount-1)"
+                                            [disabled]="answerResponse.controls['selectedanswer'].invalid">NEXT</button>
+                                        <button class="btn btn-primary px-5"
+                                            *ngIf="count === (questionResponse?.totalcount - 1)"
+                                            (click)="responses.push(answerResponse.value);getQuestion(count + 1)">Submit
+                                            Answers</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 text-right">
+                                <p class="h6 my-2"><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i>
+                                     <!-- 1:00 -->
+                                     <app-timer *ngIf="questionCame" [minuites]="inputMinuites" [seconds]="inputSeconds" (PresentTimeSeconds)="seconds = $event" (PresentTimeMinuites)="minuites = $event" ></app-timer>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="showResult" class="results">
+    <div class="mat-typography resultsBg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="text-right mb-0">
+                            <i class="fa fa-times fa-lg h4 m-3 text-dark" (click)="dialogRef.close()" aria-hidden="true"></i></p>
+                        <h1 class="text-center" style="font-weight: 500;">Result Summary</h1>
+                        <div class="mx-auto my-4" style="width: 140px; height: 140px;">
+                            <div class="clearfix pStrength">
+                                <div class="c100 big p25">
+                                    <span>{{questionResponse?.score}}/{{questionResponse?.total_ques}}</span>
+                                    <div class="slice">
+                                        <div class="bar" style="transform: rotate(90deg); border-color: #17a2b8"></div>
+                                        <!--style="transform: rotate(3.6deg);" [ngStyle]="{'transform': 'rotate(' + (profilePercentage * 3.6) + 'deg);'}" -->
+                                        <div class="fill" style="border-color: #17a2b8"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"><h2 class="text-primary">View Stats Detail</h2></a>
+                            <hr class="m-5">
+                            <p class="mt-5"><small class="display-4 awesomeText">Awesome!!</small></p>
+                            <p>You have completed the test</p>
+                            <p class="mt-3">Start learning next topic - <strong>Sub topic 1.2 - name</strong></p>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-info mb-5 mt-3 px-5">CONTINUE LEARNING</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div *ngIf="!showResult" >
+    {{questionResponse?.Question}}
+    <form [formGroup]="answerResponse">
+        <div *ngFor="let ans of questionResponse?.Answers">
+          <input type="radio" formControlName="selectedanswer" name="selectedanswer" [value]="ans" > {{ans.ans}}
+        </div>
+       <button class="btn btn-default" (click)="responses.push(answerResponse.value);getQuestion(count + 1)" *ngIf="count !== (questionResponse?.totalcount-1)" [disabled]="answerResponse.controls['selectedanswer'].invalid">Next</button>
+       <button class="btn btn-default" *ngIf="count === (questionResponse?.totalcount - 1)" (click)="responses.push(answerResponse.value);getQuestion(count)" >Submit Answers</button>
+    </form>
+</div> -->
+<!-- <div class="text-center bg-light">
+    <p class="text-right mb-0">
+        <i class="fa fa-times-circle-o h4 m-3 text-info" (click)="dialogRef.close()" style="cursor: pointer;" aria-hidden="true"></i></p>
+    <h3 class="text=center font-weight-bold">Result Summary</h3>
+    <div class="mx-auto my-4" style="width: 140px; height: 140px;"> -->
+<!-- <div class="font-weight-bold h3 p-5 text-info" style="border: 5px solid #17a2b8;border-radius: 50%;">
+            5/5
+        </div> -->
+<!-- <div class="clearfix pStrength">
+            <div class="c100 big p25">
+                <span>{{correctCount}}/{{questionResponse?.totalcount}}</span>
+                <div class="slice">
+                    <div class="bar" style="transform: rotate(90deg); border-color: #17a2b8" ></div>  -->
+<!--style="transform: rotate(3.6deg);" [ngStyle]="{'transform': 'rotate(' + (profilePercentage * 3.6) + 'deg);'}" -->
+<!-- <div class="fill" style="border-color: #17a2b8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a><u>View Stats Detail</u></a>
+        <p class="mb-0 mt-5"><strong>Awesome!!</strong></p>
+        <p>You have completed the test</p>
+        <p>Start learning next topic - <strong>Sub topic 1.2 - name</strong></p>
+    </div>
+    <div>
+        <button class="btn btn-info mb-5 mt-3">CONTINUE LEARNING</button>
+    </div>
+</div> -->

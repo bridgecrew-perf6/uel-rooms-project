@@ -1,0 +1,52 @@
+@import url( "https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+$myFont: Nunito;
+$fontweight: bold;
+
+*{
+    font-family: $myFont;
+}
+
+
+::ng-deep.mat-tab-label-active{
+    color:#3a5edd;
+}
+::ng-deep.mat-ink-bar {
+    background-color: #3a5edd !important;
+}
+::ng-deep.mat-tab-label{
+    min-width: 117px !important;
+    font-family: $myFont;
+    font-weight: 600;
+
+}
+
+
+
+.remove_link {
+    visibility: hidden;
+    
+}
+.box-1:hover .remove_link {
+    visibility:visible;
+}
+
+  ::ng-deep.mat-form-field-flex{
+    background-color: transparent !important;
+    padding-left: 0px !important;
+}
+
+::ng-deep.mat-select-panel{
+    position: absolute;
+    top:38px;
+    left: 30px;
+}
+::ng-deep .cdk-overlay-container {
+  z-index: 1051;
+ }
+
+ .outer-box-article{
+  font-family: $myFont;
+
+
+ }
+

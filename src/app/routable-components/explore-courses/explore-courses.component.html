@@ -1,0 +1,300 @@
+<div class="container-fluid exploreCousers">
+    <div class="row">
+        <div class="col-12 bg-info" style="height: 480px;">
+            <div class="row">
+                <div class="col-6 p-5">
+                    <p class="textMain">Explore our Courses</p>
+                    <p class="subText">Study any topic, anytime. Learn on your schedule.</p>
+                </div>
+                <div class="col-6">
+                    <img class="h-auto w-100" src="assets/images/explore.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row trendingCourses" >
+        <ng-container *ngIf="courses && courses.trending_courses && courses.trending_courses.length > 0" >
+            <div class="col-12 mt-5">
+                <p class="subHeadLine mb-0">Trending Courses</p>
+                <p class="headLineBorder mt-2"> </p>
+            </div>
+            <div class="col-12 px-5">
+                <div class="row">
+                    <div class="col-4" *ngFor="let course of courses.trending_courses | slice: 0 : 2">
+                        <div class="card outerCard border-0 shadow">
+                            <div class="card innercard border-0">
+                                <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3>{{course.name}}</h3>
+                                <p class="mt-4"><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> 13 hours <i
+                                        class="fa fa-bookmark-o float-right fa-lg" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-6 my-4 py-4">
+                        <div class="card outerCardHorizantal border-0 shadow">
+                            <div class="d-flex">
+                                <div class="card innercardHorizantal border-0">
+                                    <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                                </div>
+                                <div class="mt-4 p-4">
+                                    <h3>Cloud Computing</h3>
+                                    <p class="mt-4">
+                                        <i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> 13 hours <i
+                                            class="fa fa-bookmark-o float-right fa-lg" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-6 my-4 py-4" *ngFor="let course of courses.trending_courses | slice: 3 : 5">
+                        <div class="card outerCardHorizantal border-0 shadow">
+                            <div class="d-flex">
+                                <div class="card innercardHorizantal border-0">
+                                    <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                                </div>
+                                <div class="mt-4 p-4">
+                                    <h3>Cloud Computing</h3>
+                                    <p class="mt-4">
+                                        <i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> 13 hours <i
+                                            class="fa fa-bookmark-o float-right fa-lg" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <!-- <div class="col-12 mt-5">
+            <p class="subHeadLine mb-0">Trending Courses</p>
+            <p class="headLineBorder mt-2"> </p>
+        </div>
+        <div class="col-12 px-5">
+            <div class="row">
+                <div class="col-4"*ngFor="let course of courses.trending_courses">
+                    <div class="card outerCard border-0 shadow">
+                        <div class="card innercard border-0">
+                            <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-4">
+                            <h3>Cloud Computing</h3>
+                            <p class="mt-4"><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> 13 hours <i
+                                    class="fa fa-bookmark-o float-right fa-lg" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card outerCard border-0 shadow">
+                        <div class="card innercard border-0">
+                            <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-4">
+                            <h3>Cloud Computing</h3>
+                            <p class="mt-4"><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> 13 hours <i
+                                    class="fa fa-bookmark-o float-right fa-lg" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card outerCard border-0 shadow">
+                        <div class="card innercard border-0">
+                            <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-4">
+                            <h3>Cloud Computing</h3>
+                            <p class="mt-4"><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> 13 hours <i
+                                    class="fa fa-bookmark-o float-right fa-lg" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 my-4 py-4">
+                    <div class="card outerCardHorizantal border-0 shadow">
+                        <div class="d-flex">
+                            <div class="card innercardHorizantal border-0">
+                                <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="mt-4 p-4">
+                                <h3>Cloud Computing</h3>
+                                <p class="mt-4">
+                                    <i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> 13 hours <i
+                                        class="fa fa-bookmark-o float-right fa-lg" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 my-4 py-4">
+                    <div class="card outerCardHorizantal border-0 shadow">
+                        <div class="d-flex">
+                            <div class="card innercardHorizantal border-0">
+                                <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="mt-4 p-4">
+                                <h3>Cloud Computing</h3>
+                                <p class="mt-4">
+                                    <i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> 13 hours <i
+                                        class="fa fa-bookmark-o float-right fa-lg" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <ng-container *ngIf="courses && courses.normal_courses && courses.normal_courses.length > 0">
+            <div class="col-12 mt-5">
+                <p class="mb-0 pl-3 subHeadLine text-left">Courses </p>
+                <p class="headLineBorder mt-2"> </p>
+            </div>
+            <div class="col-12 px-5">
+                <div class="row">
+                    <div class="col-6 my-4" *ngFor="let course of courses.normal_courses | slice : 0 : 2">
+                        <div class="card outerCardHorizantal border-0 shadow">
+                            <div class="d-flex">
+                                <div class="card innercardHorizantal border-0">
+                                    <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                                </div>
+                                <div class="p-4">
+                                    <h3 style="font-size: 24px;">{{course.name}}</h3>
+                                    <div class="courseDetails">
+                                        <p><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> Duration : {{course.duration_in_hours}} hours
+                                        </p>
+                                        <p><i class="fa fa-user-o fa-lg mr-2" aria-hidden="true"></i> Course by : {{course.author}}</p>
+                                        <a><u>View Details</u></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-6 my-4">
+                        <div class="card outerCardHorizantal border-0 shadow">
+                            <div class="d-flex">
+                                <div class="card innercardHorizantal border-0">
+                                    <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                                </div>
+                                <div class="p-4">
+                                    <h3 style="font-size: 24px;">Cloud Computing</h3>
+                                    <div class="courseDetails">
+                                        <p><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> Duration : 5 months
+                                        </p>
+                                        <p><i class="fa fa-user-o fa-lg mr-2" aria-hidden="true"></i> Course by : Soumya
+                                            kanti Gosh</p>
+                                        <a><u>View Details</u></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </ng-container>
+        <!-- <div class="col-12 mt-5">
+            <p class="mb-0 pl-3 subHeadLine text-left">Courses </p>
+            <p class="headLineBorder mt-2"> </p>
+        </div>
+        <div class="col-12 px-5">
+            <div class="row">
+                <div class="col-6 my-4">
+                    <div class="card outerCardHorizantal border-0 shadow">
+                        <div class="d-flex">
+                            <div class="card innercardHorizantal border-0">
+                                <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 style="font-size: 24px;">Cloud Computing</h3>
+                                <div class="courseDetails">
+                                    <p><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> Duration : 5 months
+                                    </p>
+                                    <p><i class="fa fa-user-o fa-lg mr-2" aria-hidden="true"></i> Course by : Soumya
+                                        kanti Gosh</p>
+                                    <a><u>View Details</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 my-4">
+                    <div class="card outerCardHorizantal border-0 shadow">
+                        <div class="d-flex">
+                            <div class="card innercardHorizantal border-0">
+                                <i class="fa fa-4x fa-play-circle my-auto text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 style="font-size: 24px;">Cloud Computing</h3>
+                                <div class="courseDetails">
+                                    <p><i class="fa fa-clock-o fa-lg mr-2" aria-hidden="true"></i> Duration : 5 months
+                                    </p>
+                                    <p><i class="fa fa-user-o fa-lg mr-2" aria-hidden="true"></i> Course by : Soumya
+                                        kanti Gosh</p>
+                                    <a><u>View Details</u></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="row my-5 selfAssessment">
+        <div class="col-12 wrapper">
+            <div class="row">
+                <div class="col-6">
+                    <div class="m-2 p-5">
+                        <h1>Self Assessment</h1>
+                        <p>
+                            It helps to personalize your journey accroding to your intrest and skills. Also it will help
+                            you to understand the best career opportunity avaliable for you.
+                        </p>
+                        <button class="btn mt-4">TAKE ASSESSMENT</button>
+                    </div>
+                </div>
+                <div class="col-6 text-center">
+                    <img class="w-auto my-5" style="height: 300px;" src="assets/images/assignments.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row trendingCourses upcomming" *ngIf="courses && courses.upcoming_courses.length > 0">
+        <div class="col-12">
+            <p class="subHeadLine mb-0 ml-4 pl-3">Upcoming Courses</p>
+            <p class="headLineBorder mt-2 ml-5"> </p>
+        </div>
+        <div class="col-12 px-5">
+            <div class="row">
+                <div class="col-5 my-4 offset-1" *ngFor="let course of courses.upcoming_courses | slice: 0 : 2">
+                    <div class="card outerCardHorizantal border-0 shadow">
+                        <div class="d-flex">
+                            <div class="card innercardHorizantal border-0">
+                                <i class="fa fa-5x fa-picture-o my-auto text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3>{{course.name}}</h3>
+                                <div class="font-weight-bold mt-4">NOTIFY ME</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-5 my-4">
+                    <div class="card outerCardHorizantal border-0 shadow">
+                        <div class="d-flex">
+                            <div class="card innercardHorizantal border-0">
+                                <i class="fa fa-5x fa-picture-o my-auto text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3>Overview of Cloud Computing</h3>
+                                <div class="font-weight-bold mt-4">NOTIFY ME</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="row trendingCourses TechPapers">
+        <div class="col-12">
+            <p class="subHeadLine mb-0 ml-4 pl-3">Featured Articles & Tech Paper</p>
+            <p class="headLineBorder mt-2 ml-5"> </p>
+        </div>
+        <div class="col-12 px-5">
+            Demo
+        </div>
+    </div>
+</div>

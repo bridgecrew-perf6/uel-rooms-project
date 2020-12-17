@@ -1,0 +1,23 @@
+<ng-template #content let-modal>
+
+    <div class="modal-body">
+     <h5 class="font-weight-bold text-center">Edit Bio</h5>
+     <p class="text-center"><small class="font-weight-normal">Tell us a little about you and your qualifications</small></p>
+    </div>
+    <div class="form-group container col-lg-11">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+      </div>
+      <div class="container py-4">
+      <div class="row">
+      <div class="col-lg-6 pt-3">
+          <button class="btn btn-lg btn-outline-info w-100">CANCEL</button>
+      </div>
+      <div class="col-lg-6 pt-3">
+        <button class="btn btn-lg btn-info w-100">UPDATE BIO</button>
+    </div>
+</div>
+</div>
+</ng-template>
+
+<a routerLink='edit'><button class="btn btn-white" (click)="openLg(content)"><img
+    src="../../../../../assets/icons/edit.svg" width="60%"></button></a>

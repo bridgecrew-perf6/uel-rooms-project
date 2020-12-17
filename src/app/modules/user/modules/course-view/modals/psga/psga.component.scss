@@ -1,0 +1,50 @@
+
+.btn {
+    border:none;
+    background-color: inherit;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 100px;
+    outline: inherit;
+    border-bottom:rgb(209, 126, 48) ;
+    
+   
+  }
+  .btn:visited{
+    background:rgb(209, 126, 48);
+  }
+  
+  .th{
+  
+    // background:rgb(7, 73, 110);
+    background:whitesmoke;
+    border-radius: 36px;
+    
+  }
+  
+  
+  .table{
+  
+    
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .sec{
+    border-spacing: 0;
+    border-radius: 36px;
+    width:fit-content;
+    height:350px;
+    border: noborder;
+    background:rgb(214, 212, 212);
+    // background:rgb(7, 73, 110);
+    // background:rgb(10, 38, 54);
+    color: black;
+    
+  }
+  
+  
+  /* On mouse-over */
+  .btn:hover {background:rgb(209, 126, 48);}
+  
+  

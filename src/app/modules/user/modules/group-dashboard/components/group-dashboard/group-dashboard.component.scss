@@ -1,0 +1,78 @@
+@import url('https://code.highcharts.com/css/highcharts.css');
+
+.statsDashboard {
+    .card {
+        .card-header {
+            background-color: #e4ecf3;
+        }
+        .card-body {
+            // font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+    }
+    .progress {
+        border-radius: 10px;
+        height: 10px;
+        margin-top: 7px;
+    }
+    .myStatsFirstGraph {
+        max-height: 450px;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #e4ecf3;
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px; 
+          }
+        &::-webkit-scrollbar-thumb {
+            background: #17a2b8;
+            border-radius: 10px; 
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #007bff; 
+        }
+
+    }
+}
+
+::ng-deep .customTabset {
+    ul {
+        border-bottom: 0;
+        padding-right: 16px;
+        padding-left: 16px;
+        .nav-item.active {
+            border-bottom: 2px solid #343a40;
+        }
+        .nav-item.active > a, .nav-link:hover, .nav-link:focus {
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+    .tab-content {
+        background-color: #f8f9fa;
+        padding: 15px;
+        .card-title {
+            font-weight: 600;
+        }
+    }
+}
+
+::ng-deep .courseProgressChart {
+    .highcharts-root text {
+        text-transform: capitalize;
+    }
+}
+
+select {
+    max-width: 150px;
+  }
+
+.example-full-width {
+    width: 100%;
+  }
+
+.m-l {
+    margin-left: 60px;
+  }
+

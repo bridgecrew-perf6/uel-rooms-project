@@ -1,0 +1,20 @@
+::ng-deep .mat-menu-content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    .list-group-item {
+        border-color: transparent;
+        border-top-width: 1px;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        &:hover {
+            background-color: #17a2b8;
+            border-color: #fff;
+            color: #fff;
+            cursor: pointer;
+        }
+        &:first-child:hover {
+            cursor: text;
+        }
+    }
+}

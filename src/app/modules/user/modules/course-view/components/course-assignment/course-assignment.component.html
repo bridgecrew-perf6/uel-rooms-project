@@ -1,0 +1,126 @@
+<div class="embed-responsive">
+    <div class="row ml-3 mr-3">
+        <div class="col-md-12 border p-3 courseNav">
+            <h4>Assignment</h4>
+            <div class="float-right">Time left : <span id="time" class="text-danger">
+                    <!-- <countdown #cd [config]="{leftTime:sec,demand:true,format:'mm:ss' }"></countdown> -->
+                </span></div>
+            <div class="mb-3">
+                <p><strong>Problem Statement &nbsp;:</strong> {{assignmentInfo?.data.pblm_id}}</p>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-3"> Level :&nbsp;
+                    <!-- {% if problem.level == 1 %} -->
+                    <span *ngIf="assignmentInfo?.data.level==1" class="text-success mr-5"><strong>Easy</strong></span>
+                    <!-- {% elif problem.level == 2 %} -->
+                    <span *ngIf="assignmentInfo?.data.level==2" class="text-warning mr-5"><strong>Medium</strong></span>
+                    <!-- {% else %} -->
+                    <span *ngIf="assignmentInfo?.data.level==3" class="text-danger mr-5"><strong>Tough</strong></span>
+                    <!-- {% endif %} -->
+                </div>
+                <div class="col-md-7">
+                    Topics:
+                </div>
+                <!-- <div class="col-md-9">
+                        
+                        <a class="btn btn-sm btn-primary mb-2"
+                            href="/topicAndTest/{{problem.chapter.course.id}}/{{i.chapter}}/{{i.topic}}"
+                            target=_blank>{{i.topicname}}</a>
+                        
+                    </div> -->
+            </div>
+            <mat-tab-group animationDuration="0ms">
+                <mat-tab label="Description">
+                    <p>{{assignmentInfo?.data.instructions}}</p>
+                </mat-tab>
+                <mat-tab label="Hints">
+                    <h5><strong>Refer&nbsp;:</strong></h5>
+                    <div class="card" *ngFor="let refer of assignmentInfo?.data.subtags">
+                        <div class="card-body">
+                            <h4 class="heading text-center">{{refer.name}}</h4>
+                            <p class="lead">
+                                <pre class="">{{refer.content}}</pre>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Sample I/O">
+                    <h5><strong>Sample Input&nbsp;:</strong></h5><br />
+                    <pre class="">{{assignmentInfo?.data.eg_input}}</pre>
+                    <h5><strong>Sample Output&nbsp;:</strong></h5><br />
+                    <pre class="">{{assignmentInfo?.data.eg_output}}</pre>
+                </mat-tab>
+                <mat-tab label="Solutions">
+                    No Solutions Yet
+                </mat-tab>
+            </mat-tab-group>
+
+            <!--  =======================compiler ======================== -->
+           compiler
+            <div class="mt-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 border mt-2">
+                            <div class="mt-2">
+                                <h5>Editor</h5>
+                                <div>
+                                    <textarea [(ngModel)]="code" rows="9" cols="80" ></textarea>
+                                    <!-- <div id="editorr" style="height: 500px;" class="border" ace-editor #editor
+                                        [(text)]="text" [theme]="'eclipse'" [options]="options" [readOnly]="false"
+                                        [autoUpdateContent]="true" [durationBeforeCallback]="1000"
+                                        style="min-height: 300px; width:100%; overflow: auto;"></div> -->
+                                </div>
+                            </div>
+                            <button (click)="runCode()" class="btn btn-success mt-2 mb-2"
+                            id="run">Run</button>
+                           <button  class="btn btn-success ml-2 m-2" (click)="save()" >Save
+                            Program</button>
+                            <button  class="btn btn-success ml-2 m-2" (click)="psda()" >
+                                psga</button>
+                            <!-- <button *ngIf="!solved" (click)="run()" class="btn btn-success mt-2 mb-2"
+                                id="run">Run</button>
+                            <button *ngIf="!solved" class="btn btn-success ml-2 m-2" (click)="Save()">Save
+                                Program</button> -->
+
+                            <!-- <button type="button" hidden id="modal-btn" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                Launch demo modal
+                            </button> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- <p>Hello this is the testcases part</p> -->
+
+            <section >
+                <div class="container">
+                    <div class="">
+                        <div class="" *ngFor="let test of testresults">
+                            <div class="card pmd-card">
+                                <div class="row card-body pmd-title-separator">
+                                    <div class="col-md-3">
+                                        <h5 class="card-title">Testcase {{test.no}}</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Status:</h5>
+                                        <p class="card-subtitle text-success" *ngIf="test.testcase==true">Success
+                                        </p>
+                                        <p class="card-subtitle text-danger" *ngIf="test.testcase==false">Failed</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>Output:</p>
+                                        <pre class="bg-dark text-white">{{test.output}}</pre>
+                                    </div>
+                                    <div class="col-md-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

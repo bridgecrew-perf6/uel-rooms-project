@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 my-4 shadow">
+      <div class="row">
+        <div class="col-12 col-md-5 bg-light border rounded border-right-0 d-none d-md-block">
+          <div class="position-relative welcomeText">
+            <h2 class="font-weight-bold text-center">Welcome back to UEL ROOMS!</h2>
+            <p class="text-center">To keep connected with us please login!</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 border rounded">
+          <form class="p-5" id="a-form" [formGroup]="loginForm">
+            <p class="text-danger text-center" *ngIf="error">{{error}}</p>
+            <div class="form-group">
+              <label for="username">Email Address</label>
+              <input type="text" class="form-control rounded-0" formControlName="username"
+                placeholder="Enter Email Address">
+              <small id="emailHelp"
+                class="form-text text-muted">{{formErrors.checktouchedvaliddirty(loginForm, 'username')}}</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control rounded-0" formControlName="password"
+                placeholder="Enter Password">
+              <small id="emailHelp"
+                class="form-text text-muted">{{formErrors.checktouchedvaliddirty(loginForm, 'password')}}</small>
+            </div>
+            <div class="form-check my-4">
+              <input type="checkbox" class="form-check-input" id="remember" name="remember" value="">
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              <label class="float-right"><a routerLink="/forgot-password/reset-password"><u>Forgot Password?</u></a></label>
+            </div>
+            <div class="px-5">
+                <button type="submit" class="btn btn-block btn-primary rounded-0" (click)="login()">LOGIN</button>
+            </div>
+            <p class="text-center my-3">OR</p>
+            <div class="text-center my-4">
+              <i (click)="auth.facebookLogin()" class="fa fa-2x fa-facebook-square text-primary mx-3" aria-hidden="true"></i>
+              <!-- <i class="fa fa-2x fa-github-square text-dark mx-3" aria-hidden="true"></i> -->
+              <i (click)="auth.googleLogin()" class="fa fa-2x fa-google text-success" aria-hidden="true"></i>
+            </div>
+            <p class="mt-4 text-center">Not a member ? <a class="font-weight-bold"
+                routerLink="/registration"><u>Signup</u></a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="container-fluid statsDashboard">
+    <div class="row my-4">
+        <div class="col-12 mb-4">
+            <h2 class="card-title" style="font-weight: 600;">
+                ROOM AT BEST PRICES
+            </h2>
+            <div class="card border-0 shadow-sm" style="background-color: #e4ecf3;">
+                <div class="card-body font-weight-normal">
+                    <div class="d-flex">
+                        <div class="col-6">
+                           
+                            <a class="example-full-width">
+                                <mat-form-field >
+                                    <mat-label>location</mat-label>
+                                    <textarea matInput></textarea>
+                                </mat-form-field>
+
+                                <mat-form-field class="m-l">
+                                    <mat-label>Number of Rooms</mat-label>
+                                    <textarea matInput></textarea>
+                                </mat-form-field>
+
+                                <mat-form-field class="m-l" appearance="">
+                                    <mat-label>Choose a date</mat-label>
+                                    <input matInput [matDatepicker]="picker">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker [dateClass]="dateClass" #picker></mat-datepicker>
+                                </mat-form-field>
+                            </a>    
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="row my-4">
+        <div class="col-12 mb-4">
+            <h3 class="card-title" style="font-weight: 600;">
+               Drop your details
+            </h3>
+            <div class="card border-0 shadow-sm" style="background-color: #e4ecf3;">
+                <div class="card-body font-weight-normal">
+                    <div class="d-flex">
+                        <div class="col-6">
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Name</mat-label>
+                                    <input matInput placeholder="enter first and last name">
+                                </mat-form-field> 
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Mobile Number</mat-label>
+                                    <input matInput placeholder="+44 963214785">
+                                </mat-form-field> 
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Gmail.id</mat-label>
+                                    <input matInput placeholder="name@gmail">
+                                </mat-form-field> 
+                            </div>
+                        </div>
+                        
+                        <div class="col-6 align-self-center text-right">
+                            <button class="btn btn-primary text-uppercase" [routerLink]="'/user/course-concepts/' + registeredCourseId + '/' + (auth.subscribedCourses$ | async)[activeCourseIndex].course__id + '/content'" [queryParams]="{chapterslno: this.resumeData?.course_slnno, topicslno: this.resumeData?.topic_slno}" >Book Rooms</button>
+                            <button class="btn btn-outline-primary text-uppercase ml-3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+
+
+</div>

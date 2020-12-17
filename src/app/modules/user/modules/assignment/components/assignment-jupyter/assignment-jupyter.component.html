@@ -1,0 +1,63 @@
+<div class="container-fluid assignmentJupter">
+    <div class="row">
+        <div class="col-12" [ngClass]="{'col-md-12' : expandManu, 'col-md-8' : !expandManu}">
+            <div class="border-0 card my-4 shadow-sm">
+                <div class="card-header border-bottom-0 text-uppercase font-weight-bold">
+                    <div class="d-flex">
+                        <div>
+                            <i class="fa fa-chevron-left mr-3" aria-hidden="true" (click)="navigateToPreviousPage()" ></i> Assignment 1
+                        </div>
+                        <div class="ml-auto">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;<app-timer [minuites]="15" [seconds]="00"></app-timer> 
+                            <i class="fa fa-bars ml-4 pointer" (click)="expandManu = !expandManu" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body bg-light">
+                     <div class="border w-100 frameHeight">
+                        <!-- "I" FRAME SHOULD BE HERE  -->
+                        <iframe allowfullscreen frameborder="0" class="w-100 h-100" [src]="iframeUrl"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="!expandManu" class="col-md-4 col-lg-4 col-sm-12">
+            <div class="border-0 card my-4 shadow-sm">
+                <div class="card-header border-bottom-0 font-weight-bold">
+                    AI Based Pro Active Support
+                </div>
+                <div class="card-body bg-light">
+                    <div class="card rounded shadow-sm secondCard" *ngIf="route.snapshot.queryParams.hidePsga !== 'hide'">
+                        <div class="card-body secondCardBody">
+                            <p class="cardTitle"><strong><i class="fa fa-sitemap mr-2" aria-hidden="true"></i> PSG network & solved examples</strong></p>
+                            <p>View problem solving gap network and analysis your weak / strong point. Go through the solved examples anf knowledge items to build up your knowledge and start solving the assignment again.</p>
+                            <div class="text-center">
+                                <button class="btn btn-block btn-primary text-uppercase" (click)="openpsgaGraph()" >View PSG Graph</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card rounded shadow-sm secondCard my-4">
+                        <div class="card-body secondCardBody">
+                            <p class="cardTitle"><strong><i class="fa fa-users mr-2" aria-hidden="true"></i> Group Support</strong></p>
+                            <p>Share your issues with the group and seek support from them to solve the problem.</p>
+                            <div class="text-center">
+                                <button class="btn btn-block btn-primary text-uppercase">Group Support</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card rounded shadow-sm secondCard">
+                        <div class="card-body secondCardBody">
+                            <p class="cardTitle"><strong><i class="fa fa-question-circle mr-2" aria-hidden="true"></i> Mentor Support</strong></p>
+                            <p>You can even seek help from your mentor but only after the given time duration ends. We want you to try solving the problem on your own first.</p>
+                            <div class="text-center">
+                                <button class="btn btn-block btn-primary text-uppercase">Mentor Support</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

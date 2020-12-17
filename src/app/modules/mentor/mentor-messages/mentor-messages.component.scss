@@ -1,0 +1,275 @@
+.card {
+    border-radius: 10px;
+    ::ng-deep .customTabset {
+        ul.nav-tabs {
+            padding-right: 16px;
+            padding-left: 16px;
+            justify-content: space-between;
+            .nav-item a {
+                color: #1f2343;
+            }
+            .nav-item.active {
+                border-bottom: 2px solid #3a5edd;
+                a {
+                    color: #3a5edd;
+                    font-weight: 600;
+                }
+            }
+            .nav-item.active > a, .nav-link:hover, .nav-link:focus {
+                background-color: transparent;
+                border-color: transparent;
+            }
+        }
+        .tab-content {
+            background-color: transparent;
+            .mat-form-field-suffix {
+                top: 8px;
+            }
+            ul.chatList {
+                min-height: 450px;
+                max-height: 450px;
+                li {
+                    list-style: none;
+                    border-left: 5px solid transparent;
+                    img {
+                        width: 60px;
+                        height: auto;
+                    }
+                    .fa {
+                        background-color: #dee2e6;
+                        color: #3a5edd;
+                        width: 45px;
+                        height: 45px;
+                        text-align: center;
+                        line-height: 45px;
+                    }
+                    h6 {
+                        font-weight: 600;
+                    }
+                    .progress {
+                        border-radius: 10px;
+                        height: 6px;
+                        .progress-bar {
+                            background-color: #b5b5b5;
+                        }
+                    }
+                    .notify-badge {
+                        position: absolute;
+                        background: #3a5edd;
+                        height: 15px;
+                        bottom: 0px;
+                        right: 0;
+                        width: 15px;
+                        text-align: center;
+                        line-height: 0.9rem;
+                        font-size: 10px;
+                        border-radius: 50%;
+                        color:white;
+                        border: 1px solid #3a5edd;
+                    }
+                }
+                li.active {
+                    border-left: 5px solid #3b5fdd;
+                }
+            }
+        }
+    }
+      /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+     
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e4e3e3; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e4e3e3; 
+  }
+}
+
+.chatDetailWindow {
+    .card {
+        .card-header {
+            padding: 6px 20px;
+            img {
+                width: 30px;
+                height: auto;
+            }
+            .fa {
+                background-color: #dee2e6;
+                color: #3a5edd;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+            }
+            img.searchPng {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+            .chatTitle {
+                line-height: 15px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            small {
+                color: #db7093;
+            }
+        }
+        .card-body {
+            min-height: 465px;
+            max-height: 465px;
+            .inComminMessage, .outGoingMessage {
+                .avatarDiv {
+                    min-width: 47px;
+                    max-width: 47px;
+                    img {
+                        width: 44px;
+                        height: 44px;
+                        object-fit: contain;
+                    }
+                }
+                .messageDiv {
+                    max-width: 80%;
+                    .messageText {
+                        padding: 10px 10px;
+                        &:hover .hoverAction,
+                        &:focus .hoverAction,
+                        &:active .hoverAction,
+                        .hoverAction.open,
+                        .hoverAction.opened {
+                            display: block;
+                        }
+                        .hoverAction {
+                            display: none;
+                            float: right;
+                            font-size: 10px;
+                            position: absolute;
+                            right: 10px;
+                            top: 2px;
+                        }
+                    }
+                }
+            }
+            .inComminMessage {
+                .messageText {
+                    background-color: #e4ecf3;
+                }
+            }
+            .outGoingMessage {
+                .doneAll {
+                    font-size: 13px;
+                    color: #3a5edd;
+                    top: 2px;
+                    position: relative;
+                    right: 5px;
+                    font-weight: 600;
+                }
+                .messageText {
+                    background-color: #3a5edd;
+                    color: #fff;
+                }
+            }
+        }
+        .card-footer {
+            .replyRow {
+                .replyMessage {
+                    background-color: #e4ecf3;
+                    padding: 15px;
+                    border-left: 5px solid #5d5d5d;
+                    margin-top: 2px;
+                    opacity: 0.7;
+                }
+            }
+            img {
+                width: 30px;
+                height: auto;
+            }
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .card.memberDetails {
+            .card-header {
+                p {
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            }
+            .card-body {
+                min-height: 535px;
+                max-height: 535px;
+                ul.chatList {
+                    li {
+                        list-style: none;
+                        img {
+                            width: 60px;
+                            height: auto;
+                        }
+                        .fa {
+                            background-color: #dee2e6;
+                            color: #3a5edd;
+                            width: 45px;
+                            height: 45px;
+                            text-align: center;
+                            line-height: 45px;
+                        }
+                        h6 {
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                        .progress {
+                            border-radius: 10px;
+                            height: 6px;
+                            .progress-bar {
+                                background-color: #b5b5b5;
+                            }
+                        }
+                        .notify-badge {
+                            position: absolute;
+                            background: #3a5edd;
+                            height: 15px;
+                            bottom: 0px;
+                            right: 0;
+                            width: 15px;
+                            text-align: center;
+                            line-height: 0.9rem;
+                            font-size: 10px;
+                            border-radius: 50%;
+                            color:white;
+                            border: 1px solid #3a5edd;
+                        }
+                    }
+                }
+            }
+            ::-webkit-scrollbar {
+                display: block;
+            }
+    }
+}
+
+::ng-deep .customMatMenu {
+    border-radius: 10px !important;
+    margin-top: 5px;
+    .mat-menu-content:not(:empty) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .mat-menu-item {
+            height: 40px;
+        }
+    }
+}

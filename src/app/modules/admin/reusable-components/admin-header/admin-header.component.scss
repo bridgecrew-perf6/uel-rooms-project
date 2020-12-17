@@ -1,0 +1,12 @@
+ul.sideTools {
+    li {
+        padding: 12px 20px;
+        border-left: 3px solid #ffffff;
+        color: #5c5c5c;
+        margin: 10px 0px;
+    }
+    li.active {
+        border-left: 3px solid #3a5edd;
+        color: #3a5edd;
+    }
+}

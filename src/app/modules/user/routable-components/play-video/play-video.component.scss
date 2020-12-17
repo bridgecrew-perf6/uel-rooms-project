@@ -1,0 +1,48 @@
+
+// .navbar{
+//     z-index: 100;
+//   }
+.sidebar{
+
+    width:20%;
+}
+  .new{
+      border-left: 5px solid rgb(21, 136, 202);
+  }
+
+ul.timeline:before {
+    content: ' ';
+    background-color: #57ccf0;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    list-style-type: none;
+}
+ul.timeline > li:before {
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #57ccf0;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.float {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 8em;
+    height: 8em;
+    pointer-events: auto !important;
+  }
+
+

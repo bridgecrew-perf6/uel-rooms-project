@@ -1,0 +1,121 @@
+<div class="container-fluid px-4">
+    <div class="row">
+        <div class="col-12 d-flex my-3">
+            <div>Premium User / Martin Abasto</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-2">
+                    <h6 class="mb-0 py-1">Personal Info</h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col 6 border-right">
+                            <div class="d-flex">
+                                <div class="imgDiv">
+                                    <img class="img-fluid"
+                                        src="https://cdn.zeplin.io/5f59af391d3811bc16f1d6d8/assets/F1712868-FCF1-4309-9068-AF09252F36F8.png">
+                                </div>
+                                <div class="align-self-center pl-3">
+                                    <p class="font-weight-bold mb-0">Martin Abasto</p>
+                                    <p class="mb-0 text-muted">Designation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col 6">
+                            <ul class="list-group">
+                                <li>
+                                    <p>
+                                        <span class="material-icons-outlined mr-2">email</span>
+                                        <strong class="mr-2">Email:</strong>
+                                        martin.abasto@gmail.com
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span class="material-icons-outlined mr-2">local_phone</span>
+                                        <strong class="mr-2">Phone Number:</strong>
+                                        9848012345
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm mt-4">
+                <div class="card-header bg-white py-2">
+                    <h6 class="mb-0 py-1">Courses & Groups</h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm">
+                                <div class="border-0 card-header px-3 py-2">
+                                    <h6 class="my-1">Machine Learning</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Duration: <span class="text-muted ml-2">3rd Jan 2020 - 3rd Aug 2020</span></p>
+                                    <p>Mentor: <span class="text-muted ml-2">Aditya Agrawal</span></p>
+                                    <p>Group: <span class="text-muted ml-2">MachineLearning_01</span></p>
+                                    <p>Course Extended: <span class="text-muted ml-2">N/A</span></p>
+                                    <p>Mentor Hour: <span class="text-muted ml-2">N/A</span></p>
+                                    <p>Internship: <span class="text-muted ml-2">Submitted</span></p>
+                                    <p>Amount Paid: <span class="text-muted ml-2">50, 000</span></p>
+                                    <p class="mb-0"><progressbar [value]="25"></progressbar></p>
+                                    <p class="text-muted">25% Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm">
+                                <div class="border-0 card-header px-3 py-2">
+                                    <h6 class="my-1">Cloud Computing</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Duration: <span class="text-muted ml-2">3rd Jan 2020 - 3rd Aug 2020</span></p>
+                                    <p>Mentor: <span class="text-muted ml-2">Aditya Agrawal</span></p>
+                                    <p>Group: <span class="text-muted ml-2">MachineLearning_01</span></p>
+                                    <p>Course Extended: <span class="text-muted ml-2">N/A</span></p>
+                                    <p>Mentor Hour: <span class="text-muted ml-2">N/A</span></p>
+                                    <p>Internship: <span class="text-muted ml-2">Submitted</span></p>
+                                    <p>Amount Paid: <span class="text-muted ml-2">50, 000</span></p>
+                                    <p class="mb-0"><progressbar [value]="25"></progressbar></p>
+                                    <p class="text-muted">25% Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-2">
+                    <h6 class="mb-0 py-1">Course Review</h6>
+                </div>
+                <div class="card-body">
+                    <div class="card mb-3">
+                        <div class="card-body p-3">
+                            <p class="mb-0"><strong>Cloud Computing</strong></p>
+                            <p class="mb-0"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating></p>
+                            <p class="mb-0 small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ullam at beatae quaerat!</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body p-3">
+                            <p class="mb-0"><strong>Cloud Computing</strong></p>
+                            <p class="mb-0"><rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating></p>
+                            <p class="mb-0 small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ullam at beatae quaerat!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

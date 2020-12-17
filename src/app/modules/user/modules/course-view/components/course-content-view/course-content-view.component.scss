@@ -1,0 +1,75 @@
+.courseConIf{
+    min-height:70vh;
+    min-width:100%;
+  }
+  
+  footer{
+    display: hidden;
+  }
+  
+   
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  
+  ::ng-deep div#topicContent video {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(22, 22, 22);
+    border:  2px solid black;
+    margin-bottom: 1rem;
+  }
+  
+  ::ng-deep div#topicContent p {
+    margin: 1rem;
+    font-family: sans-serif;
+  }
+  
+  ::ng-deep div#topicContent pre {
+  color : white;
+  background-color: black;
+  padding: 1rem;
+  margin : 1rem;
+  }
+  
+  ::ng-deep div#topicContent h1,h2,h3,h4,h5,h6 {
+    margin: 0 2rem 0 1rem;
+  }
+  
+  ::ng-deep div#topicContent img{
+    align-self: center;
+    margin: 1rem 1rem 2rem 1rem;
+  }
+  
+  ::ng-deep div#topicContent {
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+
+  .example-full-width{
+    width: 100%;
+  }
+
+  .m-l{
+    margin-left: 100px;
+  }

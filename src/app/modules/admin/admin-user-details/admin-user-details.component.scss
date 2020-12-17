@@ -1,0 +1,55 @@
+.card {
+    border-radius: 10px;
+    .card-header {
+        border-width: 2px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: #f0f5f9;
+        h6 {
+            font-weight: 600;
+        }
+    }
+    .card-body {
+        h6, p strong {
+            font-weight: 600;
+        }
+        .imgDiv {
+            width: 80px;
+            height: auto;
+        }
+        ul {
+            li {
+                list-style: none;
+                p {
+                    .material-icons-outlined {
+                        position: relative;
+                        top: 5px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .border-right {
+            border-width: 2px !important;
+        }
+        ::ng-deep progressbar {
+            height: 10px;
+            border-radius: 10px;
+            background-color: #e4ecf3;
+            .progress-bar {
+                background-color: #10c9b9;
+                border-radius: 10px;
+            }
+        }
+        ::ng-deep rating {
+            outline: none;
+            &:focus, span {
+                outline: none;
+            }
+            .bs-rating-star {
+                color: #ffb44d;
+                font-size: 18px;
+            }
+        }
+    }
+}

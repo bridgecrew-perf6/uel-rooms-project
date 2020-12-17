@@ -1,0 +1,33 @@
+nav {
+    z-index: 2;
+    .navbar-brand {
+        img {
+            width: 150px;
+            height: auto;
+        }
+    } 
+    
+    .nav-item.active{
+        p {
+            border: 2px solid #4C4C4C;
+            border-radius: 7.5px;
+        }
+    }
+    .nav-link {
+        color: #717171;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    
+    .btn.nav-link {
+        color: #F7F7F7;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 24px;
+        text-align: right;
+        border-radius: 4px;
+        background-color: #4C4C4C;
+    }
+}

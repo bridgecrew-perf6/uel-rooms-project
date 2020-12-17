@@ -1,0 +1,47 @@
+.assignmentJupter {
+    .pillBtnActive {
+        // color: #fff;
+        // background-color: #0069d9;
+        // border-color: #0062cc;
+        color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+    }
+    .card-header {
+        background-color: #e4ecf3;
+    }
+    .secondCard {
+        border-radius: 10px !important;
+        .secondCardBody {
+            padding: 12px;
+            p.cardTitle strong, p {
+                font-size: 14px;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}
+::ng-deep .customTabset {
+    ul {
+        border-bottom: 0;
+        padding-right: 16px;
+        padding-left: 16px;
+        .nav-item.active {
+            border-bottom: 2px solid #343a40;
+        }
+        .nav-item.active > a, .nav-link:hover, .nav-link:focus {
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+    .tab-content {
+        background-color: #f8f9fa;
+        padding: 10px;
+    }
+}
+::ng-deep .mat-tooltip {
+    /* your own custom styles here */ 
+    /* e.g. */
+    // color: yellow;
+    background-color: #138496;
+}

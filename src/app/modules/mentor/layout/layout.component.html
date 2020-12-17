@@ -1,0 +1,386 @@
+    <mat-sidenav-container class="sidenavContainer pb-4">
+        <mat-sidenav class="border-right-0 shadow-sm" mode="side" opened>
+            <app-mentor-header></app-mentor-header>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <mat-toolbar class="bg-white border-bottom">
+                <img src="assets/images/logo.png">
+                <ul class="mb-0 ml-auto">
+                    <li>
+                        <i (click)="showRightNav = !showRightNav" class="fa fa-bell-o border rounded-circle" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-user-o border rounded-circle" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </mat-toolbar>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+    <div *ngIf="showRightNav" class="rightSideNav">
+        <div class="card rightSideNavBody">
+            <div class="card-body p-0">
+                <small class="ml-2 pl-4">Alerts</small>
+                <tabset class="customTabset">
+                    <tab heading="Notifications" id="notifications">
+                        <div class="container-fluid pb-3 notifictionsContainer">
+                            <div class="row">
+                                <div class="col-12 mt-2">
+                                    <small>13th July 2020</small>
+                                    <div class="d-flex py-3">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Do a lot more with your Mondays</p>
+                                            <small>Submit new Articles & Tech papers for your students to read.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 mt-2">
+                                    <small>12th July 2020</small>
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>You have a new message from student.</small>
+                                            <a class="d-inline-block font-weight-bold small">View Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Group Name</p>
+                                            <small>You have a new message in your group.</small>
+                                            <a class="d-inline-block font-weight-bold small">View Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has booked you for 13th july 2020.</small>
+                                            <a class="d-inline-block font-weight-bold small">View booking details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has cancelled 1:1 session booking for 13th July 2020.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has rescduled booking for 13th July 2020.</small>
+                                            <a class="d-inline-block font-weight-bold small">View booking details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 mt-2">
+                                    <small>11th July 2020</small>
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>You have a new message from student.</small>
+                                            <a class="d-inline-block font-weight-bold small">View Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Group Name</p>
+                                            <small>You have a new message in your group.</small>
+                                            <a class="d-inline-block font-weight-bold small">View Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has booked you for 13th july 2020.</small>
+                                            <a class="d-inline-block font-weight-bold small">View booking details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has cancelled 1:1 session booking for 13th July 2020.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has rescduled booking for 13th July 2020.</small>
+                                            <a class="d-inline-block font-weight-bold small">View booking details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tab>
+                    <tab heading="What's new" id="whatsNew" (selectTab)="onSelect($event)">
+                        <div class="container-fluid pb-3 notifictionsContainer">
+                            <div class="row">
+                                <div class="col-12 mt-2">
+                                    <small>13th July 2020</small>
+                                    <div class="d-flex py-3">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Do a lot more with your Mondays</p>
+                                            <small>Submit new Articles & Tech papers for your students to read.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 mt-2">
+                                    <small>12th July 2020</small>
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>You have a new message from student.</small>
+                                            <a class="d-inline-block font-weight-bold small">View Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Group Name</p>
+                                            <small>You have a new message in your group.</small>
+                                            <a class="d-inline-block font-weight-bold small">View Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has booked you for 13th july 2020.</small>
+                                            <a class="d-inline-block font-weight-bold small">View booking details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has cancelled 1:1 session booking for 13th July 2020.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has rescduled booking for 13th July 2020.</small>
+                                            <a class="d-inline-block font-weight-bold small">View booking details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 mt-2">
+                                    <small>11th July 2020</small>
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>You have a new message from student.</small>
+                                            <a class="d-inline-block font-weight-bold small">View Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Group Name</p>
+                                            <small>You have a new message in your group.</small>
+                                            <a class="d-inline-block font-weight-bold small">View Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has booked you for 13th july 2020.</small>
+                                            <a class="d-inline-block font-weight-bold small">View booking details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has cancelled 1:1 session booking for 13th July 2020.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex py-3 notificationMain">
+                                        <div class="align-self-center border imgDiv bg-white rounded-circle">
+                                            <img class="img-fluid"
+                                            src="assets/images/aiEdu.png">
+                                        </div>
+                                        <div class="notifications ml-2">
+                                            <p class="mb-0">Student Name</p>
+                                            <small>has rescduled booking for 13th July 2020.</small>
+                                            <a class="d-inline-block font-weight-bold small">View booking details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tab>
+                </tabset>
+            </div>
+        </div>
+    </div>
